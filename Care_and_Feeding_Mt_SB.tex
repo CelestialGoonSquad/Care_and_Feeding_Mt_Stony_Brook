@@ -1,0 +1,599 @@
+\documentclass[12pt,titlepage]{article}
+\usepackage[titletoc,title]{appendix}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage[bottom]{footmisc} % Forces footnotes to bottom of page
+\interfootnotelinepenalty=10000
+\usepackage{fancyhdr}
+\usepackage{float}
+%\floatstyle{plaintop}
+%\restylefloat{table}
+\usepackage[font=small,skip=12pt]{caption}
+\usepackage[left=1in, right=1in, top=1.5in, bottom=1in,]{geometry}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{array,tabularx}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{multirow}
+\usepackage{cite}
+\usepackage{caption,subcaption}
+\usepackage{caption, subcaption}
+\usepackage{subfloat}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes} % Fixes direction of quotation marks
+\MakeOuterQuote{"}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage} % Each section begins on new page
+
+% Notation Command Defs
+\renewcommand\deg{\mbox{$^\circ$}}
+\providecommand{\e}[1]{\ensuremath{\times 10^{#1}}}		% exponent command
+\usepackage{commath}
+\def\mean#1{\left< #1 \right>}
+
+% define footnote symbol as whatever you want
+\makeatletter
+\def\@xfootnote[#1]{%               % \footnote[*]{foo}
+  \protected@xdef\@thefnmark{#1}%   % \footnote[$\dagger$]{foo}
+  \@footnotemark\@footnotetext}     % \footnote[$\star$]{foo}
+\makeatother                        % \footnote{foo} => regular indexed   
+
+% Enumerate circled numbering
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{%
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+% Change enumerate to 1)
+\renewcommand\labelenumi{\theenumi)}  
+
+% Table Configuration
+\renewcommand\arraystretch{1.6} % SET TABLE ROW HEIGHT (MyValue=1.0 is for standard spacing)
+\usepackage{xcolor,colortbl}
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\definecolor{Gray}{gray}{0.85}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+
+% Enumerate 
+\newcounter{rowcount}
+\newcommand{\step}{\stepcounter{rowcount}\therowcount)\hspace*{\tabcolsep}}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+\begin{minipage}{1in}
+\begin{tabular}{l}
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{1in}
+\begin{tabular}{r}
+\end{tabular}
+\end{minipage}
+
+\begin{center}
+
+{\huge\textbf{{The Care and Feeding of Mt. Stony Brook Observatory, 2nd Ed.} }}\\[0.4cm]
+
+\vspace{1cm}
+By\\
+\large\textbf{Tyler Cohen}\\
+\textit{Department of Physics and Astronomy, Stony Brook University,
+    \\Stony Brook, NY 11790}
+\end{center}
+\vspace{1cm}
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=\textwidth]{./images/cover/MtStonyBrookSunset_crop.jpg} 
+	\end{center}
+\end{figure}
+\vspace*{\fill}
+\enlargethispage{2.5\baselineskip}
+\begin{center}
+Updated \today
+\end{center}
+
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Table of Contents %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\setcounter{tocdepth}{2}
+\thispagestyle{empty}
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Beginning of Manual %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{page}{1}
+\section{Introduction}
+Mt. Stony Brook Observatory is the Stony Brook University Astronomy Department's facility for astronomy research and pubic outreach.
+Located on the roof of the Earth and Space Sciences Building in the center of West Campus, the Observatory is home to a Meade 14" Cassegrain telescope, Celestron 8" Cassegrain telescopes, a Coronado solar refractor, several large-format CCD cameras, spectrographs, and many accessories.
+This document is intended to serve as a manual supplementary to the official manuals for each instrument, which can be found at \url{https://sites.google.com/site/stonybrookastronomyclub/mt-stony-brook-observatory}.
+It primarily contains instructions specific to the setup of these instruments at Mt. Stony Brook and the maintenance and care for these instruments not otherwise covered by their respective manuals.
+It is also intended to be an update to the manual by Wahl and Metchev, 2013 \cite{wahl13} and the much earlier work by Adams, Petreshock, and Wolk, 1995\cite{adams95}.
+This manual should be updated when the Astronomy Club or Astronomy Department acquires a new piece of equipment or software or when an older piece of equipment or software becomes deprecated or inoperable.
+
+The site of the Observatory is one of the most light-polluted areas on Eastern Long Island. The absence of directional lighting on campus results in a naked-eye limiting magnitude of 5-5.5. The majority of outdoor lights on campus are high-pressure sodium vapor lamps, whose broad-spectrum emission may pose a problem when attempting to do spectroscopy. However, the largest light pollution problem is posed by the LeValle Stadium lights; broad-spectrum mercury-vapor lamps which point directly at the Observatory and wash out much of the northern sky. It is recommended that observations of dim targets be planned around the stadium schedule.
+
+
+\section{Meade LX200 14'' Telescope}
+Mt. Stony Brook's primary telescope is a 14'' f/10 Meade LX200GPS, Schmidt-Cassegrain telescope (affectionately known as "Betsy") that is permanently mounted in the Ash Dome on top of ESS.
+It is operated via the Autostar II hand controller, which can issue slew commands and contains a catalog of objects.
+The telescope is equipped with a 8x50 finder scope which has a 50mm objective and 8x magnification.
+The telescope was installed in 2010 and has accumulated wear and tear.
+The gears in the drive motor are worn and will occasionally slip, causing the physical pointing to disagree with the pointing in the Autostar.
+The knob to lock the primary mirror is known to come off and is difficult to reattach so it is best to leave the mirror unlocked.
+All directions in this section are given relative to the user looking at the telescope control panel, facing south.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=.8\textwidth]{./images/lx200/intro/ccw_RAstop.jpg}
+        \caption{Park position}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.5\textwidth}
+        \centering
+        \includegraphics[width=.8\textwidth]{./images/lx200/intro/ccw_RAstop.jpg}
+        \caption{Polar home}
+    \end{subfigure}
+    \caption{Default positions}
+\end{figure}
+
+\subsection{Quick Setup Guide (Eyepiece Observing)} \label{ssec:betsy_quick}
+The RA and DEC locks on the telescope tube must remain in the LOCKED position at all times. The telescope should be slewed using the Autostar II hand controller.
+\begin{enumerate}
+\item Turn on dome drive power (red switch, north side of dome). \label{enum:quicksetup_start}
+\item Open the dome upper shutter by pressing \underline{START}, followed by UPPER SHUTTER OPEN on the dome hand controller (All dome remote commands must be preceded by \underline{START}). If the dome ever loses power and needs to be open or shut manually, there is a hand crank next to the cabinet that can be attached to the upper shutter gearbox to raise or lower the shutter.
+\footnote[$\dagger$]{\textbf{Do not open the dome if it is raining, snowing, high winds, or if there is snow accumulation on top of the dome.}}
+\item Open the dome lower shutter by pressing LOWER SHUTTER OPEN on the hand controller
+\item Remove the canvas cover from the telescope.
+\item Gently remove the dust covers from the front of the telescope and finder scope.
+\item Insert 2'' star diagonal and 1.25'' adapter into optical tube. Tighten thumbscrews.
+\item Plug the telescope power cable into the base of the pillar. Turn on the telescope mount (power switch on the RA gearbox).
+\item Wait for telescope to take a GPS fix
+\item Insert eyepiece into star diagonal. Tighten thumbscrews.
+\item Ensure primary mirror lock is not engaged (leave the mirror unlocked, the knob has a tendency to fall off).
+\item Slew telescope to a bright object and adjust coarse manual focus knob to bring the object into focus. Fine adjustment can be made with the microfocuser via the Autostar II hand controller.\\[2em]
+\label{enum:quicksetup_end}
+\textbf{\begin{center}
+Shutdown Procedure:
+\end{center}}
+\item \textbf{Park the telescope.\footnote[*]{DONT FORGET TO PARK THE TELESCOPE!!!}} Failure to do so will result in incorrect pointing the next time it is powered up. From the Autostar II hand controller:\\
+Select Item:
+\item[]\quad $>$Utilities
+\item[]\quad\quad $>$Park Scope
+\label{enum:quickshutdown_start}
+\item Power off telescope
+\item Remove eyepiece from star diagonal
+\item Remove star diagonal from telescope tube
+\item Replace the dust covers on the front of the telescope and finder tube
+\item Replace canvas cover over telescope
+\item Rotate the dome so that the slit is over the south entrance door
+\item Close the dome lower shutter
+\item Close the dome upper shutter
+\item Write an observing log book entry with date/time in, date/time out, what you observed, any issues
+\item Turn off dome drive power
+\label{enum:quickshutdown_end}
+\end{enumerate}
+
+
+\subsection{Autostar II Hand Controller}
+
+\subsubsection{Programming a Tour}
+
+\subsubsection{Autostar Troubleshooting}
+\textbf{\flushleft Issues:}
+\begin{itemize}
+\item The hand controller display gets dim or characters flicker or disappear.
+\item The hand controller is unresponsive to button presses
+\end{itemize}
+\textbf{Solution:} The Autostar display is and LCD which is known to dim in temperatures below 27$\deg$ F (-3 C) and fail altogether if exposed to such temperatures for more than 20 minutes, especially in high humidity. This is not permanent. Keep the hand controller inside your pocket while observing in especially cold conditions.
+
+\textbf{\flushleft Issue:} The Autostar does not respond to slew commands during alignment\\
+\textbf{Solution:} When performing an alignment, the Autostar will slew the telescope to a nearby bright star. Once the alignment star is reached, the Autostar allows the user to correct the pointing by centering the star in the eyepiece, but assumes that the telescope pointing is nearly correct. The Autostar automatically sets the slew rate to the lowest setting "2x" (0.5 arcmin/s). When issuing slew commands at this rate it may appear that the telescope is not responding when in fact it is moving very slowly.
+
+
+\textbf{\flushleft Issues:} Telescope pointing for solar system objects is off by as much as 0.5\deg\\
+\textbf{Solution:}
+Since solar system objects are relatively close to Earth, their positions in the sky are known with less precision. This may seem counter-intuitive but closer objects have more complicated sidereal motion (relative to background stars). Small errors in telescope alignment are magnified when calculating positions of these objects. That is why you should avoid syncing the telescope on solar system objects.
+
+\newpage
+\section{MallinCam Xtreme II}
+The MallinCam Xtreme II is the Astronomy Club's color-video CCD camera.
+The camera houses an extremely sensitive Sony X418AKL sensor and provides deep images with very short exposure times, especially when combined with a focal reducer.
+This makes it an ideal tool for public outreach, allowing the operator to display images or video in "real time".
+A major downside of the camera is that it outputs an analog video signal (which degrades with increasing cable length) so a conversion to HDMI is preferred if using a display monitor that is not mounted on the scope.
+\textbf{Do not use power cable that is coupled with the composite video cable}.
+Since the cables are not individually shielded, the power cable may induce a current in the video cable leading to rolling bars in the image.
+The lack of a raw digital output also means that the scientific capabilities of the instrument are limited.
+The camera contains a Peltier cooling system capable of cooling the sensor down to 26 C below ambient (unfortunately the camera does not give a temperature readout), greatly suppressing the thermal noise typical in such sensitive chips.
+This also means that dew and frost have a tendency to condense on the sensor when operating at the highest cooling levels in high humidity conditions.
+It is highly recommended that you read Section \ref{sssec:dew} on Dew and Frost Prevention before operating in such conditions.
+The camera can be controlled by either the navigation keys on the back of the camera, a wireless Bluetooth remote, or by a computer running Miloslick MallinCam control software.
+Upon launching the software you may be prompted to update.
+\textbf{Do not update MallinCam Miloslick software when prompted.}
+Always click "Skip this version", otherwise you will have to purchase another activation key in order to continue using the updated software.
+%% Image of ports, cables, and accessories here
+%% Insert FOV for each combination of focal reducer and telescope and spacer
+%% Take images of jupiter in all configurations FOV = (px width of image / px width of jupiter) x angular size jupiter
+
+\begin{longtable}[t]{cc}
+	\multicolumn{1}{m{.4\textwidth}}{
+		\begin{enumerate}[label=\protect\circled{\arabic*}]\small
+		\item Video Out (BNC)
+		\item 12V Power in
+		\item Red Power on LED
+		\item SVideo in (S-VHS)
+		\item Auto iris select switch
+		\item Computer control input (RS232)
+		\item Enter Key
+		\item Up Arrow
+		\item Down Arrow
+		\item Left Arrow
+		\item Right Arrow
+		\end{enumerate}}
+
+	&		
+		
+	\raisebox{-.5\totalheight}{\includegraphics[width=.6\textwidth]{./images/MallinCam/overview/x2_back.png}}
+\end{longtable}   
+
+For any issues with the MallinCam including replacement parts, hardware failures, and general questions, contact Jack Huerkamp at MallinCamusa@gmail.com.
+
+\subsection{Astrofest Setup\\
+\small(MallinCam with Miloslick Control + Meade LX-200 + TV)}
+This setup configuration is ideal for outreach events utilizing Meade LX-200 (and can also be extended to the C8s), where the MallinCam can be controlled from a laptop via the Miloslick control software and the camera images displayed on the TV.
+This setup is also quite complicated and uses an absurd number of cables, so be wary of cable tangle and watch your step.
+The true field of view with this setup is $\sim$17'.
+The following items are required for this setup:
+
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.95\textwidth]{./images/MallinCam/astrofest_setup/equipment_numbered.jpg} 
+	\end{center}
+\end{figure}
+
+\begin{enumerate}[label=\protect\circled{\arabic*}]
+\item MallinCam XII
+\item MFR-5 Mk II (0.33X) Focal Reducer (optional)
+\item Fan kit
+\item Fan kit power cable
+\item Fan kit power extension cable
+\item 40mm eyepiece
+\item 1.25'' star diagonal
+\item 2'' star diagonal
+\item 1.25'' eyepiece adapter
+\item Frame Grabber
+\item Frame Grabber extension cable
+\item Composite, S-Video, and HDMI to HDMI Converter
+\item USB 2.0 to serial cable adapter
+\item RS-232 serial computer-control cable (9-pin)
+\item Composite video cable
+\item 6' S-video cable
+\item Power strip
+\item 1.25'' eyepiece adapter (alternative to MFR-5 focal reducer)
+\item TV with analog video and HDMI inputs (not pictured)
+\item HDMI cable (not pictured)
+\item Laptop with Miloslick MallinCam control software (not pictured)\\
+\end{enumerate}
+
+\noindent The following procedure will prepare the MallinCam for observation by bringing a star into focus on the sensor. \\
+
+\setcounter{rowcount}{0}
+\begin{longtable}[t]{cc}
+
+    \multicolumn{1}{m{.5\textwidth}}{\step Follow steps \ref{enum:quicksetup_start}-\ref{enum:quicksetup_end} of the Quick Setup Guide (Sec. \ref{ssec:betsy_quick}) to prepare the telescope for observation and bring a relatively bright star into focus with a 40mm eyepiece.\vspace{2em}
+     
+    \par \step Refer to Sec. \ref{sssec:focal_reduction} to to determine whether a focal reducer is necessary for your observation. If so, screw the MFR-5 focal reducer and optional spacer to the window of the MallinCam. Otherwise, screw in the 1.25`` eyepiece adapter.}
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/focal_reducer.jpg}} \\[8em]
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Attach the fan kit to the MallinCam by tightening the two screws on the top and bottom of kit into threads above and below MallinCam window. Plug the fan kit into the MallinCam power input.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/fankit.jpg}} \\[8em]
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Connect the fan kit power extension cable to the fan kit power cable and the extension cable to the fan kit input. Plug the power cable into the power strip. Plug the power strip in at the base of the telescope. Turn the power strip on. The red power indicator light on the MallinCam and the fan kit should both turn on.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/power_on.jpg}} \\[8em]       
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Launch Miloslick MallinCam Control software from the laptop. \vspace{2em} 
+    \par \step Connect the RS-232 control cable to the USB adapter. Tighten screws.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/rs232-usb.jpg}}\\[8em]
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Connect the other end of the RS-232 control cable to the computer control port on the MallinCam and plug the USB end of the adapter into the computer.
+    You may get a notification from Miloslick to "reset camera settings to default values". Click OK.
+    The bottom-left corner of the Miloslick window should read "MCXtreme X2/PC: Connected". See Sec. \ref{ssec:x2troubleshoot} troubleshooting.}
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/computer_connect.jpg}} \\[8em]
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Plug the male end of the frame grabber extension cable into the USB port on the other side of the laptop. Plug the frame grabber into the female end of the extension cable.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/frame_grabber.jpg}} \\[8em] 
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Plug the female end of the composite video cable into the video-out (BNC) input on the MallinCam. Twist the ring on the cable lock the cable in place. Plug the male end (RCA) of the composite video cable into the video RCA input (yellow) on the frame grabber.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/frame_grabber_connect.jpg}}
+\end{longtable}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step In Miloslick, from the top menu bar click Video $>$ Video Device $>$ USB 2828x Device. The green light on the frame grabber should turn on and the video feed should be displayed in Miloslick. If the USB 2828x Device is not listed in Video Devices, try unplugging and re-plugging the frame grabber. See Sec. \ref{ssec:x2troubleshoot} for troubleshooting.}\\[4em]
+    
+    \multicolumn{1}{m{\textwidth}}{\step To simultaneously test the composite video connection and computer connection to the camera, scroll to the bottom of the Camera Settings pane on the left side of Miloslick and check the color bars box. If color bars appear in the video feed, the computer and composite video connections have been established correctly.}
+\end{longtable}
+\begin{longtable}[t]{cc}
+
+	\multicolumn{1}{m{.5\textwidth}}{\step Plug the HDMI cable into the HDMI output of the HDMI converter box. Plug the converter box power cable into the DC5V input on the box. Attach the velcro on the bottom of the converter box to the velcro underneath the telescope mount. Plug the converter box power into the power strip. A green light on the back of the box should turn on.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/converter_box.jpg}}
+
+\end{longtable}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step It is time to mount the MallinCam to the telescope. The MallinCam should not be exposed to ambient light. Shut the dome lights off and cover the telescope. One person should mount the MallinCam while another uncoils the cables to prevent them from catching.} \\[2em]
+\end{longtable}
+\begin{longtable}[t]{cc}
+	
+	\multicolumn{1}{m{.5\textwidth}}{\step Loosen the screws around the eyepiece and remove it. Remove the cap from focal reducer and insert it into the star diagonal and tighten the thumb screws. The MallinCam should sit flush against the diagonal. It may need to be wiggled a bit in order to push it all the way in. You may turn the red dome lights on to complete the setup but DO NOT remove the telescope cover.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/mount_camera.jpg}}\\[8em]
+	
+	\multicolumn{1}{m{.5\textwidth}}{\step Collect the tangled mess of cables at your feet and tie them together with bread ties. Keep them between the chair legs to prevent tripping.
+	\vspace{4em} 
+    \par \step Plug one end of the S-Video cable into the S-Video input on the MallinCam and the other end into the S-video input on the converter box.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/svideo12.jpg}}\\
+    
+    \multicolumn{1}{m{.5\textwidth}}{\step Plug in monitor power. Plug the other end of the HDMI cable into the HDMI Input 1 on the monitor. Turn on the monitor and navigate to Input 1. If "No Signal" message appears on monitor, press the Switch button on the back of the HDMI converter box until a signal appears on the monitor.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/HDMI_monitor.jpg}}\\[4em]
+	
+\end{longtable}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step The converter box has two HDMI output options: 720p @ 60Hz and 1080p @ 50Hz, which can be toggled via the 720/1080p button on the back of the converter box. The 720p @ 60Hz option is only recommended for viewing very fast transient events (eg. occultation, satellite transit.)} \\[2em]
+    
+    \multicolumn{1}{m{\textwidth}}{\step Test the S-Video-to-HDMI connection by turning on color bars in Miloslick.} \\
+    
+    \multicolumn{1}{m{\textwidth}}{\step Remove the cover from the front of the telescope. By default, the MallinCam is in video mode (1/60s - 1/12000s exposure time). In the CAMERA SETTINGS pane, change the exposure mode to SenseUp mode (33.3ms - 2.13s).} \\
+   
+    \multicolumn{1}{m{\textwidth}}{\step Slowly increase the exposure time until the outline of the out of focus "donut" becomes visible.}\\
+    
+    \multicolumn{1}{m{\textwidth}}{\step To bring the object into focus from the 40mm eyepiece to the MallinCam, turn the coarse manual focus knob on the telescope $\sim$3 3/4 turns, counterclockwise. Simultaneously, decrease the exposure time in Miloslick so as not to overexpose the CCD. Fine focus adjustments can be made using the microfocuser on the Autostar II hand controller.}\\
+    
+   \multicolumn{1}{m{\textwidth}}{\step The MallinCam should now be in focus. From here, slew to your target object and adjust camera settings and exposure time as necessary to observe the target. Video Mode allows the MallinCam to image daytime objects such as the Sun, as well as bright nighttime objects such as the Moon and some planets. SenseUp Mode is used for imaging fainter planets, along with bright stars. Hyper Mode is used for imaging very faint deep sky objects. Several setting profiles have been saved for notable targets that can be used as a template. They can be accessed by clicking File $>$ Open Settings $>$ Select an .mc file $>$ Open.}
+\end{longtable}
+
+\begin{longtable}{c}
+	\textbf{Shutdown Procedure:}\\    
+	
+	    \multicolumn{1}{m{\textwidth}}{\step Park the MallinCam: Camera $>$ Park MallinCam. Wait three minutes for the camera to warm to ambient temperature before disconnecting power.} \\
+	    
+	    \multicolumn{1}{m{\textwidth}}{\step Turn off the power strip and unplug the MallinCam power cable. Remove all cables from the back of the MallinCam. Remove the camera from the star diagonal and immediately replace the cover on the focal reducer.} \\
+	    
+	   \multicolumn{1}{m{\textwidth}}{\step Remove the fan kit from the MallinCam. If you've recently done the dew-prevention procedure, you can store the MallinCam with the focal reducer attached.} \\
+	    
+    \multicolumn{1}{m{\textwidth}}{\step Cap all cables and return them to their storage containers. Coiling and storing cables properly will extend their life. All MallinCam components and accessories should be stored in the same box. Primary components (MallinCam, focal reducer, fan kit, etc.) should be stored in the blue lunchbox.} \\
+    
+    \multicolumn{1}{m{\textwidth}}{\step Follow Steps \ref{enum:quickshutdown_start}-\ref{enum:quickshutdown_end} of the Quick Setup Guide (Sec. \ref{ssec:betsy_quick}) to shut down the telescope.} \\
+\end{longtable}
+\setcounter{rowcount}{0}
+
+\subsection{Streaming with YouTube Live and OBS}
+\subsection{Maintenance}
+\subsubsection{Dust Removal}
+
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.95\textwidth]{./images/MallinCam/dust/mercury_transit.jpg} 
+		\caption{A MallinCam image of the sun taken during a transit of Mercury.
+		Out-of-focus dust "donuts" are visible throughout the entire image.}
+		\label{sundust}
+	\end{center}
+\end{figure}
+
+Unlike most CCD cameras, the MallinCam does not output raw pixel counts so artifacts due to the presence of dust on the sensor cannot be removed using standard preprocessing techniques.
+Therefore, the only way to deal with the dust is to remove it from the front of the sensor.
+The procedure described below can be applied to any eyepiece or objective.
+A good rule of thumb for cleaning telescope optics is to do so \textit{only when absolutely necessary}.
+Too-frequent cleaning can strip the coating on the lenses and dust accumulation can be prevented by keeping the optics covered when not in use.
+Most of the materials required for this procedure can be found in the front pocket of the blue lunchbox where the camera is stored.
+You will need:
+\begin{enumerate}[label=\protect\circled{\arabic*}]
+\item Rubber bulb blower
+\item Magnifying glass
+\item 91\% or 99\% isopropyl alcohol (anything lower than 91\% will leave streaks)
+\item Microfiber cloth
+\item Small cotton swab\\
+\end{enumerate}
+The following procedure requires extreme care, a delicate touch, and a bit of guts:
+\begin{enumerate}
+\item First try to blow the dust off with the rubber bulb blower
+\footnote[*]{\textbf{Never blow breath directly or use compressed air on telescope optics.}}
+\item If that doesn't work, wrap the microfiber cloth around the end of the cotton swab and dampen (don't soak) the cloth with alcohol.
+\label{enum:duststart}
+\item Very gently drag the tip of the cloth across the sensor in one direction.
+Apply almost no pressure at all, making several gentle passes in the same direction to clean the rest of the sensor.
+Avoid touching the pins around the edge of the sensor.
+\label{enum:dustend}
+\item After the sensor dries, inspect it with a magnifying glass under light at an angle.
+If it's still dusty, repeat steps \ref{enum:duststart} and \ref{enum:dustend} once.
+\end{enumerate}
+
+
+\subsubsection{Dew and Frost Prevention} \label{sssec:dew}
+Adapted from Woody Schlom's dew prevention guide. When you want a high power view, use the optical window to isolate the
+cooled sensor from moisture in the air.  This helps minimize condensation on
+the cooled chip.  If condensation forms, turn the MOTION DETECT in the MENU
+to ON, set the LEVEL to full Right, and the time to 60 seconds.  This
+privides minimal cooling and allows the sensor to heat up and the
+condensation to evaporate.
+
+The Peltier cooling cannot be fully turned off - on set to a low value.
+
+
+\subsubsection{Focal Reduction} \label{sssec:focal_reduction}
+
+\subsection{MallinCam Troubleshooting}\label{ssec:x2troubleshoot}
+
+\textbf{\flushleft Issues:}
+\begin{itemize}
+\item Miloslick: "No MCXtreme X2/PC found on COM6"
+\item Miloslick: "Unknown serial port error"
+\item Miloslick: "No serial ports found"
+\end{itemize}
+\textbf{Solution:} Go to Windows Control Panel $>$ Devices and Printers. 
+If "FT232R USB UART" is listed under "Unspecified", quit Miloslick (leaving camera control plugged in) and restart software.
+The order that cables are plugged into the computer matter to the software.
+If it's not listed, make sure the MallinCam power is on (red LED indicator).
+If it is on, welp, you're on your own buddy.
+
+\textbf{\flushleft Issues:}
+\begin{itemize}
+\item Miloslick: "Video Device "USB 2828x Device" Not Found"
+\item Miloslick: Blue screen in display window
+\end{itemize}
+\textbf{Solution:} Go to Windows Control Panel $>$ Devices and Printers.
+If "USB2828x" is listed under "Unspecified", quit Miloslick (leaving camera control plugged in) and restart software.
+If that doesn't work and you are using Miloslick for the first time on a new computer, the Frame Grabber device drivers will need to be installed via the Frame Grabber installation mini-disk in the front pocket of the blue lunchbox. If the device is still not listed, the frame grabber may be damaged.
+
+\textbf{\flushleft Issue:} MallinCam is frozen or not responding to commands.\\
+\textbf{Solution:} First, confirm the camera is in fact frozen by turning on the color bars in Miloslick and via the buttons on the back of the camera by pressing and holding the UP and DOWN buttons simultaneously for two seconds. If the color bars turn on via the camera buttons but not from Miloslick, the camera may no longer be connected to the software; refer to the first issue in this appendix. If the color bars do not turn on at all, turn off the MallinCam for 30 seconds, then power up as usual. If the issue is still not resolved, the MallinCam must be reset to its factory default settings by the following procedure:
+\begin{enumerate}
+\item Press the CENTER button on the camera for two seconds until the menu appears
+\item Press the UP button once to send the cursor to the last line $<$SAVE$>$
+\item Press the RIGHT button once to change $<$SAVE$>$ to $<$PRESET$>$
+\item Press the CENTER button to select $<$PRESET$>$ and return the camera to its factory settings
+\end{enumerate}
+
+
+
+
+\section{Rainbow Optics Star Spectroscope}
+
+\section{Ash Dome}
+In the summer of 2013 the roof of ESS was renovated and the original observatory dome was upgraded to a motorized (Model `R') Ash Dome.
+This offered a number of improvements, including eliminating the practice of students hanging off of the dome roof in order to open the lower shutter.
+The dome features an electrical upper shutter, an electrical winch drop-out lower shutter, and an azimuth drive.
+Internet access to the dome is supplied via a 50 ft ethernet cable that runs from an ethernet port outside the telescope room (left wall, just inside blue double-doors), through the adjacent wall, through the roof, emerging from floor of the dome beside the telescope pillar.
+Replacing this cable requires removing the south-facing dome stairs to access the hole in the roof beneath the dome floor.
+Technical issues with the dome or the Meade LX200 should be addressed to ESS Building Manager, Owen Evans (owen.evans@stonybrook.edu); Dir. of Physics Laboratories, Frank Chin (frank.chin@stonybrook.edu); and/or Machine Shop Dir., Walter Schmeling (walter.schmeling@stonybrook.edu). The Ash Manufacturing Company can be reached at ashdome@ameritech.net or (815) 436-9403.
+
+\subsection{Operation}
+\textbf{Do not open the dome if it is raining, snowing, high winds, or if there is snow accumulation on top of the dome.
+Never leave the dome unattended while it is in motion.
+Never operate the dome with any of the guards removed.
+Never allow untrained personnel to operate the observatory dome.
+Do not at any time attempt to open or close the upper shutter using the manual override without insuring electrical power is off.
+Serious injury may occur.}
+The dome shutter drive units use a drum switch control.
+The lever action is limited with a safety slide-lock.
+With the lever in the neutral position the slide-lock must be moved manually from either one side or to the other side of the switch.
+This action allows the operator to move the lever from neutral to \textbf{OPEN} or \textbf{CLOSE}.
+The slide-lock causes a forced delay.
+The delay is required to prevent any attempt to make an instant change of the shutter's direction without allowing the electrical motor to come to a complete stop.
+The motor is not an instant reversing motor and will not reverse direction if it does not stop completely.
+
+
+\begin{figure}[H] 
+	\begin{flushleft}
+		\includegraphics[width=.4\textwidth]{./images/dome/dome_remote.jpg} 
+		\label{dome_remote}
+	\end{flushleft}
+\end{figure}
+
+\subsection{Maintenance}
+With regular maintenance the Ash Dome should provide many years of service.
+The Ash Dome is a positive rack and gear drive system in the shutter and azimuth drives.
+These require attention and it is suggested that a regular maintenance schedule should be followed. 
+The following activities should be performed bi-annually to prevent wear, incessant squeaking, and maintain peak dome operation:
+
+\setcounter{rowcount}{0}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step Apply white lithium grease with a paintbrush to the shutter drive gear teeth and the worm gear.
+    										Apply any 3-in-1 oil (or WD-40 in a pinch) to azimuth drive gear teeth.
+    										This will usually alleviate most of the squeaking coming from the azimuth track during operation.} \\
+    \multicolumn{1}{m{\textwidth}}{\step The edges of the shutter drive track should also be greased to minimize wear.} \\
+    \multicolumn{1}{m{\textwidth}}{\step The Neoprene Weather Seals (black rubber skirt) along each side of the dome aperture, around the azimuth rollers and across the front and back of the shutter should be sprayed with a dry silicone to extend the life of the material.} \\[2em]
+    \multicolumn{1}{m{\textwidth}}{\centering \includegraphics[width=.8\textwidth]{./images/dome/azimuth_skirt_crop.png}} \\
+\end{longtable}
+
+\begin{longtable}[t]{cc}
+    \multicolumn{1}{m{.5\textwidth}}{\step The dome rotates on steel tires with open bearing rollers.
+    The area between the tire and the dome track should be lubricated with any 3-in-1 oil (or WD-40).
+    The drive track itself requires no lubrication.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.4\textwidth]{./images/dome/roller_crop.png}}
+\end{longtable}
+
+\begin{longtable}[t]{cc}
+    \multicolumn{1}{m{\textwidth}}{\step
+    The oil levels in the azimuth drive and upper shutter drive gear boxes are filled with Klubersynth UH1 6-460.
+    If you do not see any oil leaking it is not necessary to change this oil.} \\     
+\end{longtable}
+
+\begin{longtable}[t]{cc}
+    \multicolumn{1}{m{.5\textwidth}}{\step
+    The azimuth drive on Model ‘R’ Ash-Domes may require adjustment over time.
+	The azimuth drive gear may need to be pressed down further into the drive track.
+    This is done using the wing nut in the motor mounting bracket.
+    The azimuth drive system should be adjusted so the gear engages the azimuth drive track just pressing against the track.
+    The azimuth drive motor mount is spring-loaded and the drive gears more or less floats along in the drive track.
+    Over tightening of the tension spring and drive gear will promote excessive wear of the drive gear and track.
+    The drive track itself requires no lubrication.
+    Ideally, this should be done only by someone from the machine shop.}  
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/dome/azimuth_motor.png}} 
+\end{longtable}
+
+
+\section*{Acknowledgements}
+\thispagestyle{empty}
+
+Thank you to Matt Wahl and Stan Metchev for filling in the blanks on some of Betsy's more eccentric behaviors.
+Thank you to Larry Faltz and Jack Huerkamp for their extensive help with the MallinCam; helping to troubleshoot issues and recommending maintenance techniques.
+Thank you to the Westchester Amateur Astronomers, especially Doug Baum and John Paladini, for their continued support and guidance in imaging techniques and instrumentation.
+Finally, the construction of this manual would not have been possible without several dedicated
+undergraduates who spent many late nights (and occasionally mornings) at the
+telescope: Gary Haireti, Blaire Ness, Timothy Sarro, Daniel Welborn, and
+Brian J. "Four-Percent" Walker. Cover photo credit: Jason Berenguer.		
+
+\clearpage
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{flushleft}
+\textbf{\Large Appendix}
+\end{flushleft}
+\begin{appendix}
+
+\setcounter{table}{0}   % Reset table reference counter to zero
+\renewcommand{\thetable}{\thesection\arabic{table}}  % Set appendix table titles to 'Table <section><#>'
+\setcounter{figure}{0}     % Reset figure reference counter to zero
+\renewcommand{\thefigure}{\thesection\arabic{figure}}    % Set appendix figure titles to 'Fig. <section><#>'
+
+\section{MallinCam Focal Reduction Quick-look Table}
+
+\section{Response Curves for SBIG Filters}
+
+\end{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\nocite{*}
+\bibliography{Care_and_Feeding_Mt_SB.bib}{}	
+\bibliographystyle{plain}
+\clearpage
+
+\end{document}
