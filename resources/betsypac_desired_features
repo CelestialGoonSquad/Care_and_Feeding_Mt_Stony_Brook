@@ -1,7 +1,0 @@
-BetsyPac - a python software package for data reduction and analysis for Mt. Stony Brook Observatory's 14" telescope and instruments
-
-1) A pre-processing pipeline written as a python script which can be called by the command line (black-box) with input parameters, but contains a number of functions to do dark and bias subtraction, flat-fielding, etc. Script can be imported as a module and functions called independently.
-
-2) Time-series photometry. Some SExtractor-like software to find the same stars in all images. Maybe also to align WCS
-
-3) Some software that looks at images taken by the CCD in real time and calculated the FWHM of point sources, updating each time a new image is taken, so that telescope can be properly focused and real-time monitoring of seeing.

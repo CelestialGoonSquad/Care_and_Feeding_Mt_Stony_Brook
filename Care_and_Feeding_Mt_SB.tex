@@ -58,7 +58,7 @@
 \definecolor{Gray}{gray}{0.85}
 \definecolor{LightCyan}{rgb}{0.88,1,1}
 
-% Enumerate 
+% Enumerate Steps in Longtable 
 \newcounter{rowcount}
 \newcommand{\step}{\stepcounter{rowcount}\therowcount)\hspace*{\tabcolsep}}
 
@@ -97,7 +97,7 @@ By\\
 \vspace*{\fill}
 \enlargethispage{2.5\baselineskip}
 \begin{center}
-Updated \today
+	Updated \today
 \end{center}
 
 \end{titlepage}
@@ -120,7 +120,7 @@ It primarily contains instructions specific to the setup of these instruments at
 It is also intended to be an update to the manual by Wahl and Metchev, 2013 \cite{wahl13} and the much earlier work by Adams, Petreshock, and Wolk, 1995\cite{adams95}.
 This manual should be updated when the Astronomy Club or Astronomy Department acquires a new piece of equipment or software or when an older piece of equipment or software becomes deprecated or inoperable.
 
-The site of the Observatory is one of the most light-polluted areas on Eastern Long Island. The absence of directional lighting on campus results in a naked-eye limiting magnitude of 5-5.5. The majority of outdoor lights on campus are high-pressure sodium vapor lamps, whose broad-spectrum emission may pose a problem when attempting to do spectroscopy. However, the largest light pollution problem is posed by the LeValle Stadium lights; broad-spectrum mercury-vapor lamps which point directly at the Observatory and wash out much of the northern sky. It is recommended that observations of dim targets be planned around the stadium schedule.
+The site of the Observatory is one of the most light-polluted areas on Eastern Long Island. The absence of directional lighting on campus results in a naked-eye limiting magnitude of 5-5.5. Stony Brook has recently transitioned the majority of outdoor lights on campus to LED, whose broad-spectrum emission may pose a problem when attempting to do spectroscopy. However, the largest light pollution problem is posed by the LeValle Stadium lights; metal-halide lamps which point directly at the Observatory and wash out much of the northern sky. It is recommended that observations of dim targets in the northern hemisphere of the sky be planned around the stadium schedule.
 
 
 \section{Meade LX200 14'' Telescope}
@@ -129,7 +129,7 @@ It is operated via the Autostar II hand controller, which can issue slew command
 The telescope is equipped with a 8x50 finder scope which has a 50mm objective and 8x magnification.
 The telescope was installed in 2010 and has accumulated wear and tear.
 The gears in the drive motor are worn and will occasionally slip, causing the physical pointing to disagree with the pointing in the Autostar.
-The knob to lock the primary mirror is known to come off and is difficult to reattach so it is best to leave the mirror unlocked.
+The knob to lock the primary mirror is known to come off and is difficult to reattach so it is best to leave the mirror unlocked. When the telescope was assembled, the declination (DEC) setting circle stickers were were placed on the wrong sides. Since the setting circle with the angles labeled can be adjusted independent of the telescope, the angles do not refer to a meaningful DEC.
 All directions in this section are given relative to the user looking at the telescope control panel, facing south.
 
 \begin{figure}[H]
@@ -150,38 +150,38 @@ All directions in this section are given relative to the user looking at the tel
 \subsection{Quick Setup Guide (Eyepiece Observing)} \label{ssec:betsy_quick}
 The RA and DEC locks on the telescope tube must remain in the LOCKED position at all times. The telescope should be slewed using the Autostar II hand controller.
 \begin{enumerate}
-\item Turn on dome drive power (red switch, north side of dome). \label{enum:quicksetup_start}
-\item Open the dome upper shutter by pressing \underline{START}, followed by UPPER SHUTTER OPEN on the dome hand controller (All dome remote commands must be preceded by \underline{START}). If the dome ever loses power and needs to be open or shut manually, there is a hand crank next to the cabinet that can be attached to the upper shutter gearbox to raise or lower the shutter.
+	\item Turn on dome drive power (red switch, north side of dome). \label{enum:quicksetup_start}
+	\item Open the dome upper shutter by pressing \underline{START}, followed by UPPER SHUTTER OPEN on the dome hand controller (All dome remote commands must be preceded by \underline{START}). If the dome ever loses power and needs to be open or shut manually, there is a hand crank next to the cabinet that can be attached to the upper shutter gearbox to raise or lower the shutter.
 \footnote[$\dagger$]{\textbf{Do not open the dome if it is raining, snowing, high winds, or if there is snow accumulation on top of the dome.}}
-\item Open the dome lower shutter by pressing LOWER SHUTTER OPEN on the hand controller
-\item Remove the canvas cover from the telescope.
-\item Gently remove the dust covers from the front of the telescope and finder scope.
-\item Insert 2'' star diagonal and 1.25'' adapter into optical tube. Tighten thumbscrews.
-\item Plug the telescope power cable into the base of the pillar. Turn on the telescope mount (power switch on the RA gearbox).
-\item Wait for telescope to take a GPS fix
-\item Insert eyepiece into star diagonal. Tighten thumbscrews.
-\item Ensure primary mirror lock is not engaged (leave the mirror unlocked, the knob has a tendency to fall off).
-\item Slew telescope to a bright object and adjust coarse manual focus knob to bring the object into focus. Fine adjustment can be made with the microfocuser via the Autostar II hand controller.\\[2em]
-\label{enum:quicksetup_end}
-\textbf{\begin{center}
-Shutdown Procedure:
-\end{center}}
-\item \textbf{Park the telescope.\footnote[*]{DONT FORGET TO PARK THE TELESCOPE!!!}} Failure to do so will result in incorrect pointing the next time it is powered up. From the Autostar II hand controller:\\
+	\item Open the dome lower shutter by pressing LOWER SHUTTER OPEN on the hand controller
+	\item Remove the canvas cover from the telescope.
+	\item Gently remove the dust covers from the front of the telescope and finder scope.
+	\item Insert 2'' star diagonal and 1.25'' adapter into optical tube. Tighten thumbscrews.
+	\item Plug the telescope power cable into the base of the pillar. Turn on the telescope mount (power switch on the RA gearbox).
+	\item Wait for telescope to take a GPS fix
+	\item Insert eyepiece into star diagonal. Tighten thumbscrews.
+	\item Ensure primary mirror lock is not engaged (leave the mirror unlocked, the knob has a tendency to fall off).
+	\item Slew telescope to a bright object and adjust coarse manual focus knob to bring the object into focus. Fine adjustment can be made with the microfocuser via the Autostar II hand controller.\\[2em]
+	\label{enum:quicksetup_end}
+	\textbf{\begin{center}
+	Shutdown Procedure:
+	\end{center}}
+	\item \textbf{Park the telescope.\footnote[*]{DONT FORGET TO PARK THE TELESCOPE!!!}} Failure to do so will result in incorrect pointing the next time it is powered up. From the Autostar II hand controller:\\
 Select Item:
-\item[]\quad $>$Utilities
-\item[]\quad\quad $>$Park Scope
-\label{enum:quickshutdown_start}
-\item Power off telescope
-\item Remove eyepiece from star diagonal
-\item Remove star diagonal from telescope tube
-\item Replace the dust covers on the front of the telescope and finder tube
-\item Replace canvas cover over telescope
-\item Rotate the dome so that the slit is over the south entrance door
-\item Close the dome lower shutter
-\item Close the dome upper shutter
-\item Write an observing log book entry with date/time in, date/time out, what you observed, any issues
-\item Turn off dome drive power
-\label{enum:quickshutdown_end}
+	\item[]\quad $>$Utilities
+	\item[]\quad\quad $>$Park Scope
+	\label{enum:quickshutdown_start}
+	\item Power off telescope
+	\item Remove eyepiece from star diagonal
+	\item Remove star diagonal from telescope tube
+	\item Replace the dust covers on the front of the telescope and finder tube
+	\item Replace canvas cover over telescope
+	\item Rotate the dome so that the slit is over the south entrance door
+	\item Close the dome lower shutter
+	\item Close the dome upper shutter
+	\item Write an observing log book entry with date/time in, date/time out, what you observed, any issues
+	\item Turn off dome drive power
+	\label{enum:quickshutdown_end}
 \end{enumerate}
 
 
@@ -192,8 +192,8 @@ Select Item:
 \subsubsection{Autostar Troubleshooting}
 \textbf{\flushleft Issues:}
 \begin{itemize}
-\item The hand controller display gets dim or characters flicker or disappear.
-\item The hand controller is unresponsive to button presses
+	\item The hand controller display gets dim or characters flicker or disappear.
+	\item The hand controller is unresponsive to button presses
 \end{itemize}
 \textbf{Solution:} The Autostar display is and LCD which is known to dim in temperatures below 27$\deg$ F (-3 C) and fail altogether if exposed to such temperatures for more than 20 minutes, especially in high humidity. This is not permanent. Keep the hand controller inside your pocket while observing in especially cold conditions.
 
@@ -205,7 +205,8 @@ Select Item:
 \textbf{Solution:}
 Since solar system objects are relatively close to Earth, their positions in the sky are known with less precision. This may seem counter-intuitive but closer objects have more complicated sidereal motion (relative to background stars). Small errors in telescope alignment are magnified when calculating positions of these objects. That is why you should avoid syncing the telescope on solar system objects.
 
-\newpage
+\section{SBIG STL-1001E CCD Camera}
+
 \section{MallinCam Xtreme II}
 The MallinCam Xtreme II is the Astronomy Club's color-video CCD camera.
 The camera houses an extremely sensitive Sony X418AKL sensor and provides deep images with very short exposure times, especially when combined with a focal reducer.
@@ -248,6 +249,8 @@ Always click "Skip this version", otherwise you will have to purchase another ac
 
 For any issues with the MallinCam including replacement parts, hardware failures, and general questions, contact Jack Huerkamp at MallinCamusa@gmail.com.
 
+\subsection{Focal Reduction} \label{sssec:focal_reduction}
+
 \subsection{Astrofest Setup\\
 \small(MallinCam with Miloslick Control + Meade LX-200 + TV)}
 This setup configuration is ideal for outreach events utilizing Meade LX-200 (and can also be extended to the C8s), where the MallinCam can be controlled from a laptop via the Miloslick control software and the camera images displayed on the TV.
@@ -262,27 +265,27 @@ The following items are required for this setup:
 \end{figure}
 
 \begin{enumerate}[label=\protect\circled{\arabic*}]
-\item MallinCam XII
-\item MFR-5 Mk II (0.33X) Focal Reducer (optional)
-\item Fan kit
-\item Fan kit power cable
-\item Fan kit power extension cable
-\item 40mm eyepiece
-\item 1.25'' star diagonal
-\item 2'' star diagonal
-\item 1.25'' eyepiece adapter
-\item Frame Grabber
-\item Frame Grabber extension cable
-\item Composite, S-Video, and HDMI to HDMI Converter
-\item USB 2.0 to serial cable adapter
-\item RS-232 serial computer-control cable (9-pin)
-\item Composite video cable
-\item 6' S-video cable
-\item Power strip
-\item 1.25'' eyepiece adapter (alternative to MFR-5 focal reducer)
-\item TV with analog video and HDMI inputs (not pictured)
-\item HDMI cable (not pictured)
-\item Laptop with Miloslick MallinCam control software (not pictured)\\
+	\item MallinCam XII
+	\item MFR-5 Mk II (0.33X) Focal Reducer (optional)
+	\item Fan kit
+	\item Fan kit power cable
+	\item Fan kit power extension cable
+	\item 40mm eyepiece
+	\item 1.25'' star diagonal
+	\item 2'' star diagonal
+	\item 1.25'' eyepiece adapter
+	\item Frame Grabber
+	\item Frame Grabber extension cable
+	\item Composite, S-Video, and HDMI to HDMI Converter
+	\item USB 2.0 to serial cable adapter
+	\item RS-232 serial computer-control cable (9-pin)
+	\item Composite video cable
+	\item 6' S-video cable
+	\item Power strip
+	\item 1.25'' eyepiece adapter (alternative to MFR-5 focal reducer)
+	\item TV with analog video and HDMI inputs (not pictured)
+	\item HDMI cable (not pictured)
+	\item Laptop with Miloslick MallinCam control software (not pictured)\\
 \end{enumerate}
 
 \noindent The following procedure will prepare the MallinCam for observation by bringing a star into focus on the sensor. \\
@@ -292,7 +295,7 @@ The following items are required for this setup:
 
     \multicolumn{1}{m{.5\textwidth}}{\step Follow steps \ref{enum:quicksetup_start}-\ref{enum:quicksetup_end} of the Quick Setup Guide (Sec. \ref{ssec:betsy_quick}) to prepare the telescope for observation and bring a relatively bright star into focus with a 40mm eyepiece.\vspace{2em}
      
-    \par \step Refer to Sec. \ref{sssec:focal_reduction} to to determine whether a focal reducer is necessary for your observation. If so, screw the MFR-5 focal reducer and optional spacer to the window of the MallinCam. Otherwise, screw in the 1.25`` eyepiece adapter.}
+    \par \step Refer to Sec. \ref{sssec:focal_reduction} to to determine whether a focal reducer is necessary for your observation. If so, screw the MFR-5 focal reducer and optional spacer to the window of the MallinCam (pictured). Otherwise, screw in the 1.25`` eyepiece adapter.}
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/focal_reducer.jpg}} \\[8em]
     
@@ -372,7 +375,7 @@ The following items are required for this setup:
 \begin{longtable}{c}
 	\textbf{Shutdown Procedure:}\\    
 	
-	    \multicolumn{1}{m{\textwidth}}{\step Park the MallinCam: Camera $>$ Park MallinCam. Wait three minutes for the camera to warm to ambient temperature before disconnecting power.} \\
+	    \multicolumn{1}{m{\textwidth}}{\step Park the MallinCam. In Miloslick: Camera $>$ Park MallinCam. Wait three minutes for the camera to warm to ambient temperature before disconnecting power.} \\
 	    
 	    \multicolumn{1}{m{\textwidth}}{\step Turn off the power strip and unplug the MallinCam power cable. Remove all cables from the back of the MallinCam. Remove the camera from the star diagonal and immediately replace the cover on the focal reducer.} \\
 	    
@@ -405,24 +408,24 @@ Too-frequent cleaning can strip the coating on the lenses and dust accumulation 
 Most of the materials required for this procedure can be found in the front pocket of the blue lunchbox where the camera is stored.
 You will need:
 \begin{enumerate}[label=\protect\circled{\arabic*}]
-\item Rubber bulb blower
-\item Magnifying glass
-\item 91\% or 99\% isopropyl alcohol (anything lower than 91\% will leave streaks)
-\item Microfiber cloth
-\item Small cotton swab\\
+	\item Rubber bulb blower
+	\item Magnifying glass
+	\item 91\% or 99\% isopropyl alcohol (anything lower than 91\% will leave streaks)
+	\item Microfiber cloth
+	\item Small cotton swab\\
 \end{enumerate}
 The following procedure requires extreme care, a delicate touch, and a bit of guts:
 \begin{enumerate}
-\item First try to blow the dust off with the rubber bulb blower
-\footnote[*]{\textbf{Never blow breath directly or use compressed air on telescope optics.}}
-\item If that doesn't work, wrap the microfiber cloth around the end of the cotton swab and dampen (don't soak) the cloth with alcohol.
-\label{enum:duststart}
-\item Very gently drag the tip of the cloth across the sensor in one direction.
-Apply almost no pressure at all, making several gentle passes in the same direction to clean the rest of the sensor.
-Avoid touching the pins around the edge of the sensor.
-\label{enum:dustend}
-\item After the sensor dries, inspect it with a magnifying glass under light at an angle.
-If it's still dusty, repeat steps \ref{enum:duststart} and \ref{enum:dustend} once.
+	\item First try to blow the dust off with the rubber bulb blower
+	\footnote[*]{\textbf{Never blow breath directly or use compressed air on telescope optics.}}
+	\item If that doesn't work, wrap the microfiber cloth around the end of the cotton swab and dampen (don't soak) the cloth with alcohol.
+	\label{enum:duststart}
+	\item Very gently drag the tip of the cloth across the sensor in one direction.
+	Apply almost no pressure at all, making several gentle passes in the same direction to clean the rest of the sensor.
+	Avoid touching the pins around the edge of the sensor.
+	\label{enum:dustend}
+	\item After the sensor dries, inspect it with a magnifying glass under light at an angle.
+	If it's still dusty, repeat steps \ref{enum:duststart} and \ref{enum:dustend} once.
 \end{enumerate}
 
 
@@ -436,16 +439,13 @@ condensation to evaporate.
 
 The Peltier cooling cannot be fully turned off - on set to a low value.
 
-
-\subsubsection{Focal Reduction} \label{sssec:focal_reduction}
-
 \subsection{MallinCam Troubleshooting}\label{ssec:x2troubleshoot}
 
 \textbf{\flushleft Issues:}
 \begin{itemize}
-\item Miloslick: "No MCXtreme X2/PC found on COM6"
-\item Miloslick: "Unknown serial port error"
-\item Miloslick: "No serial ports found"
+	\item Miloslick: "No MCXtreme X2/PC found on COM6"
+	\item Miloslick: "Unknown serial port error"
+	\item Miloslick: "No serial ports found"
 \end{itemize}
 \textbf{Solution:} Go to Windows Control Panel $>$ Devices and Printers. 
 If "FT232R USB UART" is listed under "Unspecified", quit Miloslick (leaving camera control plugged in) and restart software.
@@ -455,8 +455,8 @@ If it is on, welp, you're on your own buddy.
 
 \textbf{\flushleft Issues:}
 \begin{itemize}
-\item Miloslick: "Video Device "USB 2828x Device" Not Found"
-\item Miloslick: Blue screen in display window
+	\item Miloslick: "Video Device "USB 2828x Device" Not Found"
+	\item Miloslick: Blue screen in display window
 \end{itemize}
 \textbf{Solution:} Go to Windows Control Panel $>$ Devices and Printers.
 If "USB2828x" is listed under "Unspecified", quit Miloslick (leaving camera control plugged in) and restart software.
@@ -465,10 +465,10 @@ If that doesn't work and you are using Miloslick for the first time on a new com
 \textbf{\flushleft Issue:} MallinCam is frozen or not responding to commands.\\
 \textbf{Solution:} First, confirm the camera is in fact frozen by turning on the color bars in Miloslick and via the buttons on the back of the camera by pressing and holding the UP and DOWN buttons simultaneously for two seconds. If the color bars turn on via the camera buttons but not from Miloslick, the camera may no longer be connected to the software; refer to the first issue in this appendix. If the color bars do not turn on at all, turn off the MallinCam for 30 seconds, then power up as usual. If the issue is still not resolved, the MallinCam must be reset to its factory default settings by the following procedure:
 \begin{enumerate}
-\item Press the CENTER button on the camera for two seconds until the menu appears
-\item Press the UP button once to send the cursor to the last line $<$SAVE$>$
-\item Press the RIGHT button once to change $<$SAVE$>$ to $<$PRESET$>$
-\item Press the CENTER button to select $<$PRESET$>$ and return the camera to its factory settings
+	\item Press the CENTER button on the camera for two seconds until the menu appears
+	\item Press the UP button once to send the cursor to the last line $<$SAVE$>$
+	\item Press the RIGHT button once to change $<$SAVE$>$ to $<$PRESET$>$
+	\item Press the CENTER button to select $<$PRESET$>$ and return the camera to its factory settings
 \end{enumerate}
 
 
@@ -496,16 +496,63 @@ The lever action is limited with a safety slide-lock.
 With the lever in the neutral position the slide-lock must be moved manually from either one side or to the other side of the switch.
 This action allows the operator to move the lever from neutral to \textbf{OPEN} or \textbf{CLOSE}.
 The slide-lock causes a forced delay.
+\par The dome may be operated either by remote control or the control panels.
+When a button is pressed on either the remote or panel and a signal is sent, the yellow light on the panel will turn on.
+A five-second time delay is installed into the command system prior to any shutter motions.
 The delay is required to prevent any attempt to make an instant change of the shutter's direction without allowing the electrical motor to come to a complete stop.
 The motor is not an instant reversing motor and will not reverse direction if it does not stop completely.
+The dome will not accept any command it cannot complete.
+Any command can be ended immediately by pressing the \textbf{STOP} button.
+To reverse any dome motion you must press the \textbf{STOP} button first. 
 
+\subsubsection{Control Panel Operating Instructions}
+
+The shutter control panel is located above the conductor bars to the right of the shutter and the azimuth panel is just below the azimuth motor next to the dome power switch.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.4\textwidth}
+        \centering
+        \includegraphics[width=.8\textwidth]{./images/dome/shutter_ctrl_panel.png}
+        \caption{Shutter control panel}
+    \end{subfigure}%
+    \begin{subfigure}[t]{0.4\textwidth}
+        \centering
+        \includegraphics[width=.8\textwidth]{./images/dome/azimuth_ctrl_panel.png}
+        \caption{Azimuth control panel}
+    \end{subfigure}
+    \caption{}
+\end{figure}
+
+\begin{enumerate}
+	\item Flip the dome power switch to the \textbf{ON} position.
+	\item Turn the switch on both control panels from Remote Control to Control Panel
+	\item Wait 15 seconds for the time delay to clear system and reset. The green light should turn on.
+	\item The upper shutter will open at any time but will not close until the lower drop-out is completely closed.
+	\item The shutter can be stopped/started at any point between full open and full close.
+	\item The lower shutter will not activate until the upper shutter is raised past the past the safety limit switch (approx. 16'').
+\end{enumerate}
+
+\subsubsection{Remote Control Operating Instructions}
+There are two dome remotes.
+One is kept in the SBIG STL-1001E CCD box in the telescope room and the other in the cabinet inside the dome.
 
 \begin{figure}[H] 
-	\begin{flushleft}
-		\includegraphics[width=.4\textwidth]{./images/dome/dome_remote.jpg} 
+	\begin{center}
+		\includegraphics[width=.25\textwidth]{./images/dome/dome_remote.jpg} 
 		\label{dome_remote}
-	\end{flushleft}
+	\end{center}
+	\caption{Dome remote control}
 \end{figure}
+
+\begin{enumerate}
+	\item Flip the dome power switch to the \textbf{ON} position.
+	\item Turn the switch on both control panels from Control Panel to Remote Control.
+	\item Wait 15 seconds for the time delay to clear system and reset. The green light should turn on.
+	\item Press and hold the \textbf{\underline{START}} button. The green light on the remote will blink. The system is activated.
+	\item Every remote command must be preceded by pressing \textbf{\underline{START}}.
+	\item When finished operating in remote control mode, push the \textbf{STOP} button on the remote to shut the system down.
+\end{enumerate}
 
 \subsection{Maintenance}
 With regular maintenance the Ash Dome should provide many years of service.
@@ -537,18 +584,53 @@ The following activities should be performed bi-annually to prevent wear, incess
     If you do not see any oil leaking it is not necessary to change this oil.} \\     
 \end{longtable}
 
-\begin{longtable}[t]{cc}
-    \multicolumn{1}{m{.5\textwidth}}{\step
-    The azimuth drive on Model ‘R’ Ash-Domes may require adjustment over time.
-	The azimuth drive gear may need to be pressed down further into the drive track.
-    This is done using the wing nut in the motor mounting bracket.
-    The azimuth drive system should be adjusted so the gear engages the azimuth drive track just pressing against the track.
-    The azimuth drive motor mount is spring-loaded and the drive gears more or less floats along in the drive track.
-    Over tightening of the tension spring and drive gear will promote excessive wear of the drive gear and track.
-    The drive track itself requires no lubrication.
-    Ideally, this should be done only by someone from the machine shop.}  
+The azimuth drive on Model ‘R’ Ash-Domes may require adjustment over time.
+The azimuth drive gear may need to be pressed down further into the drive track.
+This is done using the wing nut in the motor mounting bracket.
+The azimuth drive system should be adjusted so the gear engages the azimuth drive track just pressing against the track.
+The azimuth drive motor mount is spring-loaded and the drive gears more or less floats along in the drive track.
+Over tightening of the tension spring and drive gear will promote excessive wear of the drive gear and track.
+The drive track itself requires no lubrication.
+Ideally, this should be done only by someone from the machine shop.
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{./images/dome/azimuth_motor_wide.png} 
+		\label{azimuth_motor}
+	\end{center}
+\end{figure}
+
+\subsection{Dome Troubleshooting}
+
+\par In the event that the dome loses power, do not leave the shutter open. Perform the following actions to close the dome:
+
+\setcounter{rowcount}{0}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step Ensure that the main dome power switch is \textbf{OFF}.}
+\end{longtable}
+\vspace{-3em}
+\begin{longtable}{cc}    
+    \multicolumn{1}{m{.75\textwidth}}{\step In order to close the lower shutter, you must disengage the spring arm that holds the lower shutter open.
+    To disengage the spring arm you must unhinge the tension spring from the arm (pictured).
+    The location of the spring in the context of the entire lower shutter is shown in Figure \ref{apdx:lower_shutter}.
+    If the lower shutter is fully open then there should be no tension on the spring and it should come off easily.}
     & 
-    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/dome/azimuth_motor.png}} 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.2\textwidth]{./images/dome/spring_arm.png}}
+\end{longtable}
+\vspace{-2em}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step Reel the lower shutter in by the cable. 
+    The lower shutter must be closed first.
+    Make sure that the disengaged arm and spring do not get jammed between the dome and door.}
+\end{longtable}
+\begin{longtable}{cc}    
+    \multicolumn{1}{m{.75\textwidth}}{\step The upper shutter can be closed fairly easily using the hand crank.
+	Hook the hand crank to the eye-bolt on the upper shutter gearbox (pictured) and turn the crank clockwise to close.}
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.2\textwidth]{./images/dome/upper_shutter_gearbox.jpg}}
+\end{longtable}
+\begin{longtable}{c}    
+    \multicolumn{1}{m{\textwidth}}{\step Notify the machine shop and building manager.
+    They will need to re-wind the lower shutter winch cable.}
 \end{longtable}
 
 
@@ -558,10 +640,12 @@ The following activities should be performed bi-annually to prevent wear, incess
 Thank you to Matt Wahl and Stan Metchev for filling in the blanks on some of Betsy's more eccentric behaviors.
 Thank you to Larry Faltz and Jack Huerkamp for their extensive help with the MallinCam; helping to troubleshoot issues and recommending maintenance techniques.
 Thank you to the Westchester Amateur Astronomers, especially Doug Baum and John Paladini, for their continued support and guidance in imaging techniques and instrumentation.
+Thank you to Riley and Jim from Ash Manufacturing for providing schematic diagrams.
 Finally, the construction of this manual would not have been possible without several dedicated
 undergraduates who spent many late nights (and occasionally mornings) at the
 telescope: Gary Haireti, Blaire Ness, Timothy Sarro, Daniel Welborn, and
-Brian J. "Four-Percent" Walker. Cover photo credit: Jason Berenguer.		
+Brian J. "Four-Percent" Walker.
+Cover photo credit: Jason Berenguer.		
 
 \clearpage
 
@@ -583,8 +667,21 @@ Brian J. "Four-Percent" Walker. Cover photo credit: Jason Berenguer.
 \renewcommand{\thefigure}{\thesection\arabic{figure}}    % Set appendix figure titles to 'Fig. <section><#>'
 
 \section{MallinCam Focal Reduction Quick-look Table}
-
+...
 \section{Response Curves for SBIG Filters}
+...
+\section{Ash Dome Lower Shutter}
+
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.65\textheight]{./images/dome/lower_shutter_schematic.png} 
+		\label{azimuth_motor}
+	\end{center}
+	\caption{A schematic detailing the components of the lower shutter.
+	Unhinge the spring marked by the dashed circle in order to disengage the spring arm and close the door.}
+	\label{apdx:lower_shutter}
+\end{figure}
+
 
 \end{appendix}
 
