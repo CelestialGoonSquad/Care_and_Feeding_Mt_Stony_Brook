@@ -14,4 +14,11 @@ Matthew~J. Wahl and Stanmir Metchev.
 \newblock
   \url{http://www.astro.sunysb.edu/metchev/PHY517_AST443/telescope_instructions.pdf}.
 
+\bibitem{miloslick}
+\newblock {MallinCam Control User’s Guide}.
+\newblock Version 2.0.
+\newblock Chico, CA: Miloslick Scientific; 2013.
+\newblock
+  \url{http://www.astro.sunysb.edu/astro/astroclub/Mt_Stony_Brook/Resources/Miloslick_User_GuideV2.pdf}.
+
 \end{thebibliography}
