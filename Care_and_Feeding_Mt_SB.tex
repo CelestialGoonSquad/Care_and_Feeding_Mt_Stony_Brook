@@ -136,12 +136,12 @@ All directions in this section are given relative to the user looking at the tel
     \centering
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
-        \includegraphics[width=.8\textwidth]{./images/lx200/intro/ccw_RAstop.jpg}
+        \includegraphics[width=.8\textwidth]{./images/lx200/intro/park_side.jpg}
         \caption{Park position}
     \end{subfigure}%
     \begin{subfigure}[t]{0.5\textwidth}
         \centering
-        \includegraphics[width=.8\textwidth]{./images/lx200/intro/ccw_RAstop.jpg}
+        \includegraphics[width=.85\textwidth]{./images/lx200/intro/polarhome_side.jpg}
         \caption{Polar home}
     \end{subfigure}
     \caption{Default positions}
@@ -215,17 +215,24 @@ A major downside of the camera is that it outputs an analog video signal (which 
 \textbf{Do not use power cable that is coupled with the composite video cable}.
 Since the cables are not individually shielded, the power cable may induce a current in the video cable leading to rolling bars in the image.
 The lack of a raw digital output also means that the scientific capabilities of the instrument are limited.
-The camera contains a Peltier cooling system capable of cooling the sensor down to 26 C below ambient (unfortunately the camera does not give a temperature readout), greatly suppressing the thermal noise typical in such sensitive chips.
+\par The camera contains a Peltier cooling system capable of cooling the sensor down to 26 C below ambient (unfortunately the camera does not give a temperature readout), greatly suppressing the thermal noise typical in such sensitive chips.
 This also means that dew and frost have a tendency to condense on the sensor when operating at the highest cooling levels in high humidity conditions.
 It is highly recommended that you read Section \ref{sssec:dew} on Dew and Frost Prevention before operating in such conditions.
-The camera can be controlled by either the navigation keys on the back of the camera, a wireless Bluetooth remote, or by a computer running Miloslick MallinCam control software.
+\par The camera can be controlled by either the navigation keys on the back of the camera, a wireless Bluetooth remote, or by a computer running Miloslick MallinCam control software.
 For detailed descriptions of the software menus and settings, refer to the Miloslick MallinCam control user's guide\cite{miloslick}.
 Upon launching the software you may be prompted to update.
 \textbf{Do not update MallinCam Miloslick software when prompted.}
 Always click "Skip this version", otherwise you will have to purchase another activation key in order to continue using the updated software.
+\par The MallinCam was purchased with an MFR-5 focal reducer, specifically designed for the MallinCam XII.
+The focal reducer can provide between 0.3x and 0.8x reduction, depending on the configuration.
+Refer to Appendix \ref{sssec:focal_reduction} for specifications of each configuration.
+\par For a more detailed description of camera settings, components, and recommended settings refer to MallinCam's official Xtreme manual\cite{mallincam}. 
+For any issues with the MallinCam including replacement parts, hardware failures, and general questions, contact Jack Huerkamp at MallinCamusa@gmail.com.
 %% Image of ports, cables, and accessories here
 %% Insert FOV for each combination of focal reducer and telescope and spacer
 %% Take images of jupiter in all configurations FOV = (px width of image / px width of jupiter) x angular size jupiter
+
+
 
 \begin{longtable}[t]{cc}
 	\multicolumn{1}{m{.4\textwidth}}{
@@ -247,10 +254,6 @@ Always click "Skip this version", otherwise you will have to purchase another ac
 		
 	\raisebox{-.5\totalheight}{\includegraphics[width=.6\textwidth]{./images/MallinCam/overview/x2_back.png}}
 \end{longtable}   
-
-For any issues with the MallinCam including replacement parts, hardware failures, and general questions, contact Jack Huerkamp at MallinCamusa@gmail.com.
-
-\subsection{Focal Reduction} \label{sssec:focal_reduction}
 
 \subsection{Astrofest Setup\\
 \small(MallinCam with Miloslick Control + Meade LX-200 + TV)}
@@ -296,7 +299,7 @@ The following items are required for this setup:
 
     \multicolumn{1}{m{.5\textwidth}}{\step Follow steps \ref{enum:quicksetup_start}-\ref{enum:quicksetup_end} of the Quick Setup Guide (Sec. \ref{ssec:betsy_quick}) to prepare the telescope for observation and bring a relatively bright star into focus with a 40mm eyepiece.\vspace{2em}
      
-    \par \step Refer to Sec. \ref{sssec:focal_reduction} to to determine whether a focal reducer is necessary for your observation. If so, screw the MFR-5 focal reducer and optional spacer to the window of the MallinCam (pictured). Otherwise, screw in the 1.25`` eyepiece adapter.}
+    \par \step Refer to Appendix \ref{sssec:focal_reduction} to to determine whether a focal reducer is necessary for your observation. If so, screw the MFR-5 focal reducer and optional spacer to the window of the MallinCam (pictured). Otherwise, screw in the 1.25`` eyepiece adapter.}
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/focal_reducer.jpg}} \\[8em]
     
@@ -469,7 +472,8 @@ You will need:
 \end{longtable}
 \begin{longtable}[t]{cc}
 	\multicolumn{1}{m{.5\textwidth}}{\step Allow the silica gel cartridge to cool and place it inside the plastic bag along with the 
-											MallinCam and focal reducer. Seal the bag tightly, ensuring that it is not completely inflated
+											MallinCam and focal reducer. Keep the focal reducer capped.
+											Seal the bag tightly, ensuring that it is not completely inflated
 											or you won't be able to screw the focal reducer in.
 											Place the bag in a dark location for at least 12 hours.} 
     & 
@@ -517,11 +521,11 @@ If it is on, welp, you're on your own buddy.
 
 \textbf{\flushleft Issues:}
 \begin{itemize}
-	\item Miloslick: "Video Device "USB 2828x Device" Not Found"
+	\item Miloslick: "Video Device "USB OEM Device" Not Found"
 	\item Miloslick: Blue screen in display window
 \end{itemize}
 \textbf{Solution:} Go to Windows Control Panel $>$ Devices and Printers.
-If "USB2828x" is listed under "Unspecified", quit Miloslick (leaving camera control plugged in) and restart software.
+If "USB OEM" is listed under "Unspecified", quit Miloslick (leaving camera control plugged in) and restart software.
 If that doesn't work and you are using Miloslick for the first time on a new computer, the Frame Grabber device drivers will need to be installed via the Frame Grabber installation mini-disk in the front pocket of the blue lunchbox. If the device is still not listed, the frame grabber may be damaged.
 
 \textbf{\flushleft Issue:} MallinCam is frozen or not responding to commands.\\
@@ -580,7 +584,7 @@ The shutter control panel is located above the conductor bars to the right of th
     \end{subfigure}%
     \begin{subfigure}[t]{0.4\textwidth}
         \centering
-        \includegraphics[width=.8\textwidth]{./images/dome/azimuth_ctrl_panel.png}
+        \includegraphics[width=.9\textwidth]{./images/dome/azimuth_ctrl_panel.png}
         \caption{Azimuth control panel}
     \end{subfigure}
     \caption{}
@@ -686,7 +690,7 @@ Ideally, this should be done only by someone from the machine shop.
 \end{longtable}
 \begin{longtable}{cc}    
     \multicolumn{1}{m{.75\textwidth}}{\step The upper shutter can be closed fairly easily using the hand crank.
-	Hook the hand crank to the eye-bolt on the upper shutter gearbox (pictured) and turn the crank clockwise to close.}
+	Hook the hand crank to the eye-bolt on the upper shutter gearbox (pictured) and turn the crank clockwise to close (CCW to open).}
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.2\textwidth]{./images/dome/upper_shutter_gearbox.jpg}}
 \end{longtable}
@@ -704,7 +708,7 @@ Thank you to Matt Wahl and Stan Metchev for filling in the blanks on some of Bet
 Thank you to Larry Faltz and Jack Huerkamp for their extensive help with the MallinCam; helping to troubleshoot issues and recommending maintenance techniques.
 Thank you to the Westchester Amateur Astronomers, especially Doug Baum and John Paladini, for their continued support and guidance in imaging techniques and instrumentation.
 Thank you to Riley and Jim from Ash Manufacturing for providing schematic diagrams.
-Thank you to the ESS Building Manager, Owen Evans, for giving me (unspoken) free reign after hours and for lending his power tools.
+Thank you to the ESS Building Manager, Owen Evans, for giving me free reign after hours and for lending his power tools.
 Finally, the construction of this manual would not have been possible without several dedicated
 undergraduates who spent many late nights (and occasionally mornings) at the
 telescope: Gary Haireti, Blaire Ness, Timothy Sarro, Daniel Welborn, and
@@ -730,10 +734,36 @@ Cover photo credit: Jason Berenguer.
 \setcounter{figure}{0}     % Reset figure reference counter to zero
 \renewcommand{\thefigure}{\thesection\arabic{figure}}    % Set appendix figure titles to 'Fig. <section><#>'
 
-\section{MallinCam Focal Reduction Quick-look Table}
-...
+
 \section{Response Curves for SBIG Filters}
 ...
+\section{MallinCam Focal Reduction}
+\label{sssec:focal_reduction}
+\par The MFR-5 focal reducer consists of three components, shown in Fig. \ref{mfr5} below.
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{./images/mallincam/focal_reduction/MFR5_labeled.jpg} 
+		\caption{The disassembled MFR-5 focal reducer and MallinCam.
+				The longer lens will henceforth be referred to as "A" and the shorter, "B".
+				The spacer does not contain any optics.}
+		\label{mfr5}
+	\end{center}
+\end{figure}
+\noindent Depending on the configuration of these components, the MFR-5 can provide reduction between 0.3x and 0.8x.
+Each of the three components are threaded to accommodate 1.25'' filters.
+These components can be attached individually or combined to provide more reduction.
+However, the "B" ring alone is not long enough to hold the camera inside the telescope so it must be placed between the MallinCam
+and the 1.25'' adapter.
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.6\textwidth]{./images/mallincam/focal_reduction/B_adapter.jpg} 
+		\label{mfr5_B}
+		\caption{This configuration provides 0.8x focal reduction.
+				The 1.25'' adapter does not contain any optics.}
+	\end{center}
+\end{figure}
+
+
 \section{Ash Dome Lower Shutter}
 
 \begin{figure}[H] 
@@ -742,7 +772,8 @@ Cover photo credit: Jason Berenguer.
 		\label{azimuth_motor}
 	\end{center}
 	\caption{A schematic detailing the components of the lower shutter.
-	Unhook the spring marked by the dashed circle in order to disengage the spring arm and close the door.}
+			In the event of power loss, unhook the spring marked by the dashed circle in
+			order to disengage the spring arm and close the door.}
 	\label{apdx:lower_shutter}
 \end{figure}
 

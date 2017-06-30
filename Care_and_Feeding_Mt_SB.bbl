@@ -6,6 +6,21 @@ Nancy~R. Adams, James~G. Petreshock, and Scott~J. Wolk.
 \newblock Dept. Physics and Astronomy, Stony Brook University, 1 edition, 1995.
 \newblock \url{sbast3.ess.sunysb.edu/observer/care2.ps}.
 
+\bibitem{mallincam}
+Michael Burns and Rock Mallin.
+\newblock {\em Xtreme User Manual}.
+\newblock ProCom Electronics, Ottawa, Ontario, 2 edition, 4
+  2014.
+\newblock
+  \url{http://www.mallincam.net/uploads/2/6/9/1/26913006/xtreme_user_manual.pdf}.
+  
+\bibitem{miloslick}
+\newblock {MallinCam Control User’s Guide}.
+\newblock Version 2.0.
+\newblock Chico, CA: Miloslick Scientific; 2013.
+\newblock
+  \url{http://www.astro.sunysb.edu/astro/astroclub/Mt_Stony_Brook/Resources/Miloslick_User_GuideV2.pdf}.  
+  
 \bibitem{wahl13}
 Matthew~J. Wahl and Stanmir Metchev.
 \newblock {\em Mt. Stony Brook Meade 14-inch Set Up and Operations Manual}.
@@ -14,11 +29,5 @@ Matthew~J. Wahl and Stanmir Metchev.
 \newblock
   \url{http://www.astro.sunysb.edu/metchev/PHY517_AST443/telescope_instructions.pdf}.
 
-\bibitem{miloslick}
-\newblock {MallinCam Control User’s Guide}.
-\newblock Version 2.0.
-\newblock Chico, CA: Miloslick Scientific; 2013.
-\newblock
-  \url{http://www.astro.sunysb.edu/astro/astroclub/Mt_Stony_Brook/Resources/Miloslick_User_GuideV2.pdf}.
 
 \end{thebibliography}
