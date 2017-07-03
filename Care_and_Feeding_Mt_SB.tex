@@ -52,6 +52,7 @@
 \renewcommand\labelenumi{\theenumi)}  
 
 % Table Configuration
+\usepackage{makecell}
 \renewcommand\arraystretch{1.6} % SET TABLE ROW HEIGHT (MyValue=1.0 is for standard spacing)
 \usepackage{xcolor,colortbl}
 \newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
@@ -131,7 +132,8 @@ The telescope was installed in 2010 and has accumulated wear and tear.
 The gears in the drive motor are worn and will occasionally slip, causing the physical pointing to disagree with the pointing in the Autostar.
 The knob to lock the primary mirror is known to come off and is difficult to reattach so it is best to leave the mirror unlocked. When the telescope was assembled, the declination (DEC) setting circle stickers were were placed on the wrong sides. Since the setting circle with the angles labeled can be adjusted independent of the telescope, the angles do not refer to a meaningful DEC.
 All directions in this section are given relative to the user looking at the telescope control panel, facing south.
-
+It is recommended that you prop both dome doors open while observing with the LX200 to maintain stable airflow around the telescope, which will improve seeing.
+\par There are two default positions that are programmed into the LX200, shown below.
 \begin{figure}[H]
     \centering
     \begin{subfigure}[t]{0.5\textwidth}
@@ -146,6 +148,10 @@ All directions in this section are given relative to the user looking at the tel
     \end{subfigure}
     \caption{Default positions}
 \end{figure}
+When in park position, the telescope is at RA 0h0m0s, DEC 0$\deg$0'0'', pointing due South with the telescope tube parallel to the mount.
+This is the position that the telescope should return to when it is parked, before shutting down.
+If it does not return to this position, it may require pointing correction.
+The polar home position is used during pointing correction, with the telescope at RA 0h0m0s, DEC 90$\deg$0'0'' and the finder scope underneath the telescope tube.
 
 \subsection{Quick Setup Guide (Eyepiece Observing)} \label{ssec:betsy_quick}
 The RA and DEC locks on the telescope tube must remain in the LOCKED position at all times. The telescope should be slewed using the Autostar II hand controller.
@@ -186,10 +192,58 @@ Select Item:
 
 
 \subsection{Autostar II Hand Controller}
+The Autostar II is the primary interface for the operation of the LX200.
+It is programmable, to a certain degree, using the Meade Autostar software suite, which includes ASU (Autostar Updater) and AutoStar Observatory, which are installed on the Department laptop.
+From ASU, the Autostar firmware can be update, custom user objects managed, and custom tours added.]
+From AutoStar Observatory, the telescope can be slewed via computer serial control.
+
+\subsubsection{Managing Custom User Objects}
+Firware V4.2g.
+The current version of Autostar Software includes over 145,000 objects in its database.
+However, some dimmer objects are not included and you may want to add them to the database if their RA and DEC are known.
+There are two methods for managing custom user objects, the first of which uses the hand controller directly:
+\begin{enumerate}
+	\item[] Select item:
+	\item[]\quad $>$Object
+	\item[]\quad\quad $>$User Object
+	\item[]\quad\quad\quad $>$Select
+	\item[]\quad\quad\quad $>$Add
+	\item[]\quad\quad\quad $>$Delete
+	\item[]\quad\quad\quad $>$Edit
+\end{enumerate}
+To add an object:
+\begin{enumerate}
+	\item[]\quad\quad\quad $>$Add
+	\item[]\quad\quad\quad\quad $>$Enter object name using the menu navigation and number keys. To move between characters, use the slew-left and slew-right keys. Press ENTER.
+	\item[]\quad\quad\quad\quad $>$Enter object RA in the same fashion. Press ENTER. 
+	\item[]\quad\quad\quad\quad $>$Enter object DEC in the same fashion. Press ENTER.
+	\item[]\quad\quad\quad\quad $>$Optional: Enter the object's angular size in arcmin. Press ENTER.
+	\item[]\quad\quad\quad\quad $>$Optional: Enter the object's magnitude. Press ENTER.
+\end{enumerate}
+To slew to a User Object:
+\begin{enumerate}
+	\item[]\quad\quad\quad $>$Select
+	\item[]\quad\quad\quad\quad $>$Select the desired object and press ENTER.
+	\item[]\quad\quad\quad\quad $>$The object name and its coordinates will appear. Press GOTO.
+\end{enumerate}
+If there are many User Objects stored in the Autostar, many of which are not in use or do not have meaningful names, the method using the ASU suite is desired:
+\begin{enumerate}
+	\item Launch ASU from the laptop
+	\item Connect the RS232 end of the computer interface cable into the corresponding jack on telescope's computer control panel and the USB end into the laptop.
+	\item In ASU, click "Connect". "Model: LX200 GPS\quad Handbox Ver:4.2g" should appear at the bottom of the window.
+	\item Press Retrieve.
+	\item All User Objects will be listed in the AutoStar panel under the User Objects tab.
+	\item To Add, Edit, or Delete a User Object, right-click on the object, select the desired option, and fill in the objects information.
+	\item Once all changes have been made, click "Send". Note: This will replace the AutoStar hand controller library with the ASA library.
+\end{enumerate}
 
 \subsubsection{Programming a Tour}
+Sample tours can be found at \url{http://www.astro.sunysb.edu/astro/astroclub/Mt_Stony_Brook/AutostarII_Tours}.
 
 \subsubsection{Autostar Troubleshooting}
+\textbf{\flushleft Issue:} The Autostar displays "TAKING GPS FIX" and nothing happens or displays "COULD NOT FIND GPS FIX"\\
+\textbf{Solution:} Sometimes the telescope has difficulty taking a GPS fix if there is not a clear line-of-sight between the GPS antenna and the southern sky. Make sure the dome shutters are open. Rotate the dome so that the slit is pointing south and slew the telescope so that is pointing westward. The fork arm with the antenna will be pointing south. 
+
 \textbf{\flushleft Issues:}
 \begin{itemize}
 	\item The hand controller display gets dim or characters flicker or disappear.
@@ -423,6 +477,7 @@ The following procedure requires extreme care, a delicate touch, and a bit of gu
 	\item First try to blow the dust off with the rubber bulb blower
 	\footnote[*]{\textbf{Never blow breath directly or use compressed air on telescope optics.}}
 	\item If that doesn't work, wrap the microfiber cloth around the end of the cotton swab and dampen (don't soak) the cloth with alcohol.
+		Try not to touch the cloth too much with your fingers.
 	\label{enum:duststart}
 	\item Very gently drag the tip of the cloth across the sensor in one direction.
 	Apply almost no pressure at all, making several gentle passes in the same direction to clean the rest of the sensor.
@@ -584,7 +639,7 @@ The shutter control panel is located above the conductor bars to the right of th
     \end{subfigure}%
     \begin{subfigure}[t]{0.4\textwidth}
         \centering
-        \includegraphics[width=.9\textwidth]{./images/dome/azimuth_ctrl_panel.png}
+        \includegraphics[width=.8\textwidth]{./images/dome/azimuth_ctrl_panel.png}
         \caption{Azimuth control panel}
     \end{subfigure}
     \caption{}
@@ -739,18 +794,18 @@ Cover photo credit: Jason Berenguer.
 ...
 \section{MallinCam Focal Reduction}
 \label{sssec:focal_reduction}
-\par The MFR-5 focal reducer consists of three components, shown in Fig. \ref{mfr5} below.
+\par The MFR-5 focal reducer consists of four components, shown in Fig. \ref{mfr5} below.
 \begin{figure}[H] 
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{./images/mallincam/focal_reduction/MFR5_labeled.jpg} 
 		\caption{The disassembled MFR-5 focal reducer and MallinCam.
 				The longer lens will henceforth be referred to as "A" and the shorter, "B".
-				The spacer does not contain any optics.}
+				The spacers do not contain any optics.}
 		\label{mfr5}
 	\end{center}
 \end{figure}
 \noindent Depending on the configuration of these components, the MFR-5 can provide reduction between 0.3x and 0.8x.
-Each of the three components are threaded to accommodate 1.25'' filters.
+Each of the four components are threaded to accommodate 1.25'' filters.
 These components can be attached individually or combined to provide more reduction.
 However, the "B" ring alone is not long enough to hold the camera inside the telescope so it must be placed between the MallinCam
 and the 1.25'' adapter.
@@ -762,6 +817,55 @@ and the 1.25'' adapter.
 				The 1.25'' adapter does not contain any optics.}
 	\end{center}
 \end{figure}
+The following quick-look table provides the focal parameters for all configurations
+of the MFR-5 focal reducer and MallinCam on both the LX200 and C8s.
+The f/ratio and reduction factor measurements were obtained from Thompson, 2013 \cite{thompson13}.
+
+\begin{center}  
+\small{
+\begin{tabular}{|c|c|c|c|c|c|c|}
+	\hline
+	\textbf{Configuration} & \textbf{f/ratio} & \thead{\bf reduction\\ \bf factor} & \multicolumn{2}{c|}{\textbf{TFOV (arcmin)}} & \multicolumn{2}{c|}{\textbf{turns to focus}}  \\
+										&			&			&	LX200	&	C8		&	LX200	& 	C8 \\ [-1ex]
+	\hline
+	"B" + "A" 		 					&	4.01		&	0.501	& 	13.471	&	23.952	&			&		\\ [-1ex]
+	\hline
+	5mm + "B" + "A" 	  					&	3.27		&	0.409	& 	16.502	&	29.340	&			&		\\ [-1ex]
+	\hline
+	10mm + "B" + "A" *  					&	2.48		&	0.311	& 	21.701	&	38.585	&			&		\\ [-1ex]
+	\hline
+	"B" + 5mm + "A"   					&	3.64		&	0.455	& 	14.833	&	26.374	&			&		\\ [-1ex]
+	\hline
+	10mm + "B" + 5mm + "A" *$^{\dagger}$ &	2.22		&	0.277	& 	24.365	&	43.321	&			&		\\ [-1ex]
+	\hline
+	"B" 									&	6.75		&	0.844	& 	7.997	&	14.218	&			&		\\ [-1ex]
+	\hline
+	5mm + "B"							&	6.29		&	0.786	& 	8.587	&	15.267	&			&		\\ [-1ex]
+	\hline
+	10mm + "B"							&	5.80		&	0.725	& 	9.309	&	16.552	&			&		\\ [-1ex]
+	\hline
+	15mm + "B"							&	5.30 	&	0.662	& 	10.195	&	18.127	&			&		\\ [-1ex]
+	\hline
+	"A" 									&	5.46		&	0.683	& 	9.882	&	17.570	&			&		\\ [-1ex]
+	\hline
+	5mm + "A" 							&	5.10 	&	0.638	& 	10.579	&	18.809	&			&		\\ [-1ex]
+	\hline
+	10mm + "A"							&	4.69 	&	0.587	& 	11.498	&	20.443	&			&		\\ [-1ex]
+	\hline
+	15mm + "A"							&	4.29		&	0.536	& 	12.592	&	22.388	&			&		\\ 
+	\hline
+\end{tabular}}\\
+\captionof{table}{F/ratio, reduction factor, true field-of-view, and 
+				coarse adjustment knob turns (to focus from a 40mm eyepiece)
+				for each configuration of MallinCam, MFR-5, and telescope.
+				The configurations are described listing components from closest to
+				furthest from the window of the MallinCam. Configurations
+				identified with an asterisk or dagger may result in significant 
+				vignetting or coma respectively, especially on smaller scopes.}
+				\label{tab:focal_reduction} 
+\vspace{.4 cm}
+\end{center}
+
 
 
 \section{Ash Dome Lower Shutter}
