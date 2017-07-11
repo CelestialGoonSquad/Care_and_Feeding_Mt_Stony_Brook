@@ -13,11 +13,17 @@ Michael Burns and Rock Mallin.
   2014.
 \newblock
   \url{http://www.mallincam.net/uploads/2/6/9/1/26913006/xtreme_user_manual.pdf}.
+
+\bibitem{lx200}
+\newblock Meade Instruments Corporation
+\newblock {\em Instruction Manual: LX200GPS Schmidt-Cassegrain Telescopes with Autostar II Hand Controller}.
+\newblock Irvine, CA. 2003.
+\newblock  \url{http://www.meade.com/media/downloads/12/LX200GPS_manual.pdf}.  
   
 \bibitem{miloslick}
-\newblock {MallinCam Control User’s Guide}.
-\newblock Version 2.0.
-\newblock Chico, CA: Miloslick Scientific; 2013.
+\newblock {Miloslick Scientific}
+\newblock {\em MallinCam Control User’s Guide}.
+\newblock Chico, CA. Version 2.0, 2013.
 \newblock
   \url{http://www.astro.sunysb.edu/astro/astroclub/Mt_Stony_Brook/Resources/Miloslick_User_GuideV2.pdf}.  
 

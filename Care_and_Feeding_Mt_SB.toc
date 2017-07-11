@@ -3,24 +3,29 @@
 \contentsline {section}{\numberline {2}Meade LX200 14'' Telescope}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Quick Setup Guide (Eyepiece Observing)}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Autostar II Hand Controller}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Managing Custom User Objects}{5}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Programming a Tour}{6}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Autostar Troubleshooting}{6}{subsubsection.2.2.3}
-\contentsline {section}{\numberline {3}SBIG STL-1001E CCD Camera}{8}{section.3}
-\contentsline {section}{\numberline {4}MallinCam Xtreme II}{8}{section.4}
-\contentsline {subsection}{\numberline {4.1}Astrofest Setup\\ \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (MallinCam with Miloslick Control + Meade LX-200 + TV)}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Streaming with YouTube Live and OBS}{17}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Maintenance}{17}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Dust Removal}{17}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Dew and Frost Prevention}{18}{subsubsection.4.3.2}
-\contentsline {subsection}{\numberline {4.4}MallinCam Troubleshooting}{21}{subsection.4.4}
-\contentsline {section}{\numberline {5}Rainbow Optics Star Spectroscope}{22}{section.5}
-\contentsline {section}{\numberline {6}Ash Dome}{22}{section.6}
-\contentsline {subsection}{\numberline {6.1}Operation}{22}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Control Panel Operating Instructions}{23}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Remote Control Operating Instructions}{24}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}Maintenance}{24}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Dome Troubleshooting}{26}{subsection.6.3}
-\contentsline {section}{\numberline {A}Response Curves for SBIG Filters}{30}{appendix.A}
-\contentsline {section}{\numberline {B}MallinCam Focal Reduction}{31}{appendix.B}
-\contentsline {section}{\numberline {C}Ash Dome Lower Shutter}{33}{appendix.C}
+\contentsline {subsubsection}{\numberline {2.2.1}Computer Connection}{7}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Managing Custom User Objects}{8}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Custom Tours}{9}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Autostar Troubleshooting}{10}{subsubsection.2.2.4}
+\contentsline {section}{\numberline {3}SBIG STL-1001E CCD Camera}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Quick Setup Guide (CCD + LX200)}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Changing the Filter Wheel}{12}{subsection.3.2}
+\contentsline {section}{\numberline {4}MallinCam Xtreme II}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Astrofest Setup\\ \relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\leftmargin \leftmargini \topsep 9\p@ plus3\p@ minus5\p@ \parsep 4.5\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (MallinCam with Miloslick Control + Meade LX-200 + TV)}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Streaming with YouTube Live and OBS}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Maintenance}{21}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Dust Removal}{21}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Dew and Frost Prevention}{22}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}MallinCam Troubleshooting}{25}{subsection.4.4}
+\contentsline {section}{\numberline {5}Rainbow Optics Star Spectroscope}{26}{section.5}
+\contentsline {subsection}{\numberline {5.1}Eyepiece Observing}{26}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Spectroscope + MallinCam Setup}{26}{subsection.5.2}
+\contentsline {section}{\numberline {6}Ash Dome}{26}{section.6}
+\contentsline {subsection}{\numberline {6.1}Operation}{26}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Control Panel Operating Instructions}{27}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Remote Control Operating Instructions}{28}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Maintenance}{29}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Dome Troubleshooting}{30}{subsection.6.3}
+\contentsline {section}{\numberline {A}Response Curves for SBIG Filters}{34}{appendix.A}
+\contentsline {section}{\numberline {B}MallinCam Focal Reduction}{35}{appendix.B}
+\contentsline {section}{\numberline {C}Ash Dome Lower Shutter}{37}{appendix.C}

@@ -148,23 +148,23 @@ It is recommended that you prop both dome doors open while observing with the LX
     \end{subfigure}
     \caption{Default positions}
 \end{figure}
-When in park position, the telescope is at RA 0h0m0s, DEC 0$\deg$0'0'', pointing due South with the telescope tube parallel to the mount.
+\noindent When in park position, the telescope is at RA 0h0m0s, DEC 0$\deg$0'0'', pointing due South with the telescope tube parallel to the mount.
 This is the position that the telescope should return to when it is parked, before shutting down.
-If it does not return to this position, it may require pointing correction.
+If it does not return to this position, the pointing is likely incorrect.
 The polar home position is used during pointing correction, with the telescope at RA 0h0m0s, DEC 90$\deg$0'0'' and the finder scope underneath the telescope tube.
 
 \subsection{Quick Setup Guide (Eyepiece Observing)} \label{ssec:betsy_quick}
 The RA and DEC locks on the telescope tube must remain in the LOCKED position at all times. The telescope should be slewed using the Autostar II hand controller.
 \begin{enumerate}
 	\item Turn on dome drive power (red switch, north side of dome). \label{enum:quicksetup_start}
-	\item Open the dome upper shutter by pressing \underline{START}, followed by UPPER SHUTTER OPEN on the dome hand controller (All dome remote commands must be preceded by \underline{START}). If the dome ever loses power and needs to be open or shut manually, there is a hand crank next to the cabinet that can be attached to the upper shutter gearbox to raise or lower the shutter.
+	\item Open the dome upper shutter by pressing \underline{START}, followed by UPPER SHUTTER OPEN on the dome hand controller (All dome remote commands must be preceded by \underline{START}). If the dome ever loses power and needs to be open or shut manually, refer to Sec. \ref{ssec:dome_trouble}.
 \footnote[$\dagger$]{\textbf{Do not open the dome if it is raining, snowing, high winds, or if there is snow accumulation on top of the dome.}}
 	\item Open the dome lower shutter by pressing LOWER SHUTTER OPEN on the hand controller
 	\item Remove the canvas cover from the telescope.
 	\item Gently remove the dust covers from the front of the telescope and finder scope.
 	\item Insert 2'' star diagonal and 1.25'' adapter into optical tube. Tighten thumbscrews.
 	\item Plug the telescope power cable into the base of the pillar. Turn on the telescope mount (power switch on the RA gearbox).
-	\item Wait for telescope to take a GPS fix
+	\item Wait for telescope to take a GPS fix. For troubleshooting see Sec. \ref{sssec:autostar_trouble}
 	\item Insert eyepiece into star diagonal. Tighten thumbscrews.
 	\item Ensure primary mirror lock is not engaged (leave the mirror unlocked, the knob has a tendency to fall off).
 	\item Slew telescope to a bright object and adjust coarse manual focus knob to bring the object into focus. Fine adjustment can be made with the microfocuser via the Autostar II hand controller.\\[2em]
@@ -185,20 +185,132 @@ Select Item:
 	\item Rotate the dome so that the slit is over the south entrance door
 	\item Close the dome lower shutter
 	\item Close the dome upper shutter
-	\item Write an observing log book entry with date/time in, date/time out, what you observed, any issues
+	\item Write an observing log book entry with the observer's names, date/time in, date/time out, what you observed, any issues
 	\item Turn off dome drive power
 	\label{enum:quickshutdown_end}
 \end{enumerate}
 
 
 \subsection{Autostar II Hand Controller}
-The Autostar II is the primary interface for the operation of the LX200.
-It is programmable, to a certain degree, using the Meade Autostar software suite, which includes ASU (Autostar Updater) and AutoStar Observatory, which are installed on the Department laptop.
-From ASU, the Autostar firmware can be update, custom user objects managed, and custom tours added.]
+The Autostar II is the primary control interface for the operation of the LX200.
+The data is not stored in the Autostar, but in the base of the telescope.
+The current firmware version is V4.2g.
+The buttons on the Autostar and their functions are identified below.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.6\textwidth]{./images/lx200/autostar/controller_labeled.jpg}
+	\end{center}
+\end{figure}
+
+	\begin{enumerate}[label=\protect\circled{\arabic*}]\small
+	\item LCD display
+	\item ENTER Key: Descend menu level or select option \par
+			\textit{Press and hold for 2 seconds to sync on
+					selected object.}
+	\item MODE Key: Ascend menu level\par
+			\textit{Press and hold for 2 seconds to display 
+			telescope status. Press scroll keys to display:
+			\begin{itemize}[itemsep=0pt]
+				\item RA and DEC coordinates
+				\item Alt. and Az. coordinates
+				\item Local and Local Sidereal Time
+				\item Timer and Alarm status
+				\item Date
+				\item Site coordinates
+				\item Battery status		
+			\end{itemize}												
+			}
+	\item GOTO Key: Slew to coordinates of selected object. Press any other key to abort.
+	\item Arrow Keys: Up and down keys slew the telescope in DEC. Left and right keys in RA.
+			In any data entry screen, up and down keys scroll through A-Z, 0-9. Left and right
+			move cursor between characters.
+	\item Number keys: Enter digits 0-9 in any data entry screen. Each number key also has a
+			specific function, described further below:
+			\begin{itemize}[itemsep=0pt]
+				\item[] \textbf{[1] SPEED:} Adjust slew speed of telescope
+				\item[] \textbf{[2] CALD:} Display Caldwell catalog library
+				\item[] \textbf{[3] M:} Display Messier catalog library
+				\item[] \textbf{[4] FOCUS:} Adjust microfocuser speed
+				\item[] \textbf{[5] SS:} Display Solar System object library
+				\item[] \textbf{[6] STAR:} Display Star object library
+				\item[] \textbf{[7] RET:} Display Retical Control menu
+				\item[] \textbf{[8] IC:} Display Index catalog library
+				\item[] \textbf{[9] NGC:} Display New General Catalog library
+				\item[] \textbf{[0] LIGHT:} Toggle on/off red utility light on top of handbox
+			\end{itemize}
+	\item Scroll keys: Scroll through menu options. Also controls scroll speed of tickertape
+			dialogue.
+	\item ? Key: Display help file for active task. Press MODE to exit.
+	\item Autostar II cable: Other end of cable plugs into HBX port on telescope control panel.
+		There is a spare cable in the telescope room, but in a pinch you can use a regular 4-pin
+			handset cable from one of the professor's office phones.
+	\item Autostar II cable port
+	\item Utility Light: built-in red light
+	\end{enumerate}
+
+
+\noindent\textbf{Syncing:} To improve the telescope pointing accuracy in one region of the sky, sync on a bright star.
+Note: This may decrease pointing accuracy in other regions of the sky. Never sync on Solar System objects.
+\begin{enumerate}
+	\item Select a bright star from the star menu\\
+	Select item: $>$ Objects $>$ Star
+	\item Center the star in the FOV.
+	\item Press and hold ENTER for 2 seconds.
+	\item Press ENTER to sync.
+\end{enumerate}
+\textbf{Current Pointing:} To view your current pointing in RA and DEC coordinates, press and hold MODE for 2 seconds.\\
+
+\noindent\textbf{Slew Speeds:} There are nine slew speeds available to the Autostar, listed below.
+
+\begin{center}  
+\small{
+\begin{tabular}{ccc}
+Number Key	& Autostar Description	& Rate\\
+\hline
+1			& 1x				& 0.165 arcmin/s (default)\\[-1ex]
+2			& 2x				& 0.5 arcmin/s\\[-1ex]
+3			& 8x				& 2 arcmin/s\\[-1ex]
+4			& 16x			& 4 arcmin/s\\[-1ex]
+5			& 64x			& 16 arcmin/s\\[-1ex]
+6			& 128x			& 30 arcmin/s\\[-1ex]
+7			& 1.5$\deg$		& 1.5$\deg$/s\\[-1ex]
+8			& 3$\deg$		& 3$\deg$/s\\[-1ex]
+9 			& Max			& 8$\deg$/s
+
+\end{tabular}}\\
+\captionof{table}{Autostar II slew speeds}
+				\label{tab:slew_speeds} 
+\vspace{.4 cm}
+\end{center}
+
+
+\subsubsection{Computer Connection}
+The Autostar is programmable, to a certain degree, using the Meade Autostar software suite, which includes ASU (Autostar Updater) and AutoStar Observatory. 
+This software is installed on the Department laptop.
+From ASU, the Autostar firmware can be update, custom user objects managed, and custom tours added.
 From AutoStar Observatory, the telescope can be slewed via computer serial control.
+\par The cable to connect the laptop to the telescope is a USB-to-RS232-to-6-pin cable.
+There is a spare on the top shelf with the eyepieces in the telescope room.
+Plug the USB end of the cable into the laptop and the 6-pin end into the RS232 jack on the telescope's computer control panel.
+Ensure that the Autostar is plugged into the HBX jack.
+
+\begin{figure}[H]
+	\begin{tikzpicture}
+    
+    \begin{scope}[xshift=-1mm, yshift=0cm]
+    \node {\includegraphics[width=.45\textwidth]{./images/lx200/computer_ctrl/usb_to_RS232.jpg}};
+    \end{scope}    
+    
+    \begin{scope}[xshift=.5\textwidth, yshift=0]
+    \node {\includegraphics[width=.55\textwidth]{./images/lx200/computer_ctrl/computer_drive_panel.jpg}};
+    \end{scope}
+    
+	\end{tikzpicture}
+\end{figure}
+
 
 \subsubsection{Managing Custom User Objects}
-Firware V4.2g.
 The current version of Autostar Software includes over 145,000 objects in its database.
 However, some dimmer objects are not included and you may want to add them to the database if their RA and DEC are known.
 There are two methods for managing custom user objects, the first of which uses the hand controller directly:
@@ -214,10 +326,12 @@ There are two methods for managing custom user objects, the first of which uses 
 To add an object:
 \begin{enumerate}
 	\item[]\quad\quad\quad $>$Add
-	\item[]\quad\quad\quad\quad $>$Enter object name using the menu navigation and number keys. To move between characters, use the slew-left and slew-right keys. Press ENTER.
+	\item[]\quad\quad\quad\quad $>$Enter object name using the menu navigation and number keys.
+	To move between characters, use the slew-left and slew-right keys. Press ENTER.
 	\item[]\quad\quad\quad\quad $>$Enter object RA in the same fashion. Press ENTER. 
 	\item[]\quad\quad\quad\quad $>$Enter object DEC in the same fashion. Press ENTER.
-	\item[]\quad\quad\quad\quad $>$Optional: Enter the object's angular size in arcmin. Press ENTER.
+	\item[]\quad\quad\quad\quad $>$Optional: Enter the object's angular size in 
+	min. Press ENTER.
 	\item[]\quad\quad\quad\quad $>$Optional: Enter the object's magnitude. Press ENTER.
 \end{enumerate}
 To slew to a User Object:
@@ -231,25 +345,51 @@ If there are many User Objects stored in the Autostar, many of which are not in 
 	\item Launch ASU from the laptop
 	\item Connect the RS232 end of the computer interface cable into the corresponding jack on telescope's computer control panel and the USB end into the laptop.
 	\item In ASU, click "Connect". "Model: LX200 GPS\quad Handbox Ver:4.2g" should appear at the bottom of the window.
-	\item Press Retrieve.
+	\item Click "Retrieve".
 	\item All User Objects will be listed in the AutoStar panel under the User Objects tab.
 	\item To Add, Edit, or Delete a User Object, right-click on the object, select the desired option, and fill in the objects information.
-	\item Once all changes have been made, click "Send". Note: This will replace the AutoStar hand controller library with the ASA library.
+	\item Once all changes have been made, click "Send". Note: This will replace the AutoStar hand controller library with the ASU library.
 \end{enumerate}
 
-\subsubsection{Programming a Tour}
+\subsubsection{Custom Tours}
+Autostar tours enable the user to slew to multiple pre-determined objects in sequence without having to search through the Autostar's database.
+Tours are ideal for Open Nights and other outreach events where the target objects are planned in advance.
+They also allow the user to display custom information on the Autostar LCD while the tour is running,
+Tours are written in .txt files and uploaded to the Autostar via the ASU software.
+A guide to the tour syntax can be found in Appendix C of the LX200 Manual \cite{lx200}.
+To upload a tour to the Autostar:
+\begin{enumerate}
+	\item Launch ASU from the laptop
+	\item File $>$ Import
+	\item Select the .txt file containing your tour. Set object type to "Tour". Click "Import".
+	\item The tour will appear in the left "Library" panel of ASU.
+	\item Connect the laptop to the the telescope. Click "Connect" in ASU.
+	\item Click "Retrieve". This will add the Autostar library to the ASU library.
+	\item Select the tour you want to add and click "Selected -$>$".
+			If a tour with the same name already exists on the Autostar, you will be prompted to replace it with the one in your library.
+			The tour will appear in the "AutoStar" panel of ASU.
+	\item Click "Send". Note: This will replace the AutoStar hand controller library with the ASU library.
+\end{enumerate}
+To run a tour on the telescope:
+\begin{enumerate}
+	\item To initiate the tour on the Autostar press Select item $>$ Guided Tour.
+	\item Navigate the list of tours and select the one you want to run by pressing ENTER.
+	\item If an object has set or is not yet risen, the tour will automatically skip to the next object
+	\item Press GOTO on an object to slew to it
+	\item To exit the tour at any time press and hold MODE for 2 seconds.
+\end{enumerate}
 Sample tours can be found at \url{http://www.astro.sunysb.edu/astro/astroclub/Mt_Stony_Brook/AutostarII_Tours}.
 
-\subsubsection{Autostar Troubleshooting}
+\subsubsection{Autostar Troubleshooting}\label{sssec:autostar_trouble}
 \textbf{\flushleft Issue:} The Autostar displays "TAKING GPS FIX" and nothing happens or displays "COULD NOT FIND GPS FIX"\\
-\textbf{Solution:} Sometimes the telescope has difficulty taking a GPS fix if there is not a clear line-of-sight between the GPS antenna and the southern sky. Make sure the dome shutters are open. Rotate the dome so that the slit is pointing south and slew the telescope so that is pointing westward. The fork arm with the antenna will be pointing south. 
+\textbf{Solution:} Sometimes the telescope has difficulty taking a GPS fix if there is not a clear line-of-sight between the GPS antenna and the southern sky. Make sure the dome shutters are open. Rotate the dome so that the slit is pointing south and slew the telescope so that it is pointing westward. The fork arm with the antenna will be pointing south. 
 
 \textbf{\flushleft Issues:}
 \begin{itemize}
 	\item The hand controller display gets dim or characters flicker or disappear.
 	\item The hand controller is unresponsive to button presses
 \end{itemize}
-\textbf{Solution:} The Autostar display is and LCD which is known to dim in temperatures below 27$\deg$ F (-3 C) and fail altogether if exposed to such temperatures for more than 20 minutes, especially in high humidity. This is not permanent. Keep the hand controller inside your pocket while observing in especially cold conditions.
+\textbf{Solution:} The Autostar display is an LCD which is known to dim in temperatures below 27$\deg$ F (-3 C) and fail altogether if exposed to such temperatures for more than 20 minutes, especially in high humidity. This is not permanent. Keep the hand controller inside your pocket while observing in especially cold conditions.
 
 \textbf{\flushleft Issue:} The Autostar does not respond to slew commands during alignment\\
 \textbf{Solution:} When performing an alignment, the Autostar will slew the telescope to a nearby bright star. Once the alignment star is reached, the Autostar allows the user to correct the pointing by centering the star in the eyepiece, but assumes that the telescope pointing is nearly correct. The Autostar automatically sets the slew rate to the lowest setting "2x" (0.5 arcmin/s). When issuing slew commands at this rate it may appear that the telescope is not responding when in fact it is moving very slowly.
@@ -260,6 +400,10 @@ Sample tours can be found at \url{http://www.astro.sunysb.edu/astro/astroclub/Mt
 Since solar system objects are relatively close to Earth, their positions in the sky are known with less precision. This may seem counter-intuitive but closer objects have more complicated sidereal motion (relative to background stars). Small errors in telescope alignment are magnified when calculating positions of these objects. That is why you should avoid syncing the telescope on solar system objects.
 
 \section{SBIG STL-1001E CCD Camera}
+\subsection{Quick Setup Guide (CCD + LX200)}
+Find, focus, binning, etc.
+\subsection{Changing the Filter Wheel}
+
 
 \section{MallinCam Xtreme II}
 The MallinCam Xtreme II is the Astronomy Club's color-video CCD camera.
@@ -425,9 +569,9 @@ The following items are required for this setup:
    
     \multicolumn{1}{m{\textwidth}}{\step Slowly increase the exposure time until the outline of the out of focus "donut" becomes visible.}\\
     
-    \multicolumn{1}{m{\textwidth}}{\step To bring the object into focus from the 40mm eyepiece to the MallinCam, turn the coarse manual focus knob on the telescope $\sim$3 3/4 turns, counterclockwise. Simultaneously, decrease the exposure time in Miloslick so as not to overexpose the CCD. Fine focus adjustments can be made using the microfocuser on the Autostar II hand controller.}\\
+    \multicolumn{1}{m{\textwidth}}{\step To bring the star into focus from the 40mm eyepiece to the MallinCam, turn the coarse manual focus knob on the telescope $\sim$3 3/4 turns, counterclockwise. Simultaneously, decrease the exposure time in Miloslick so as not to overexpose the CCD. Fine focus adjustments can be made using the microfocuser on the Autostar II hand controller.}\\
     
-   \multicolumn{1}{m{\textwidth}}{\step The MallinCam should now be in focus. From here, slew to your target object and adjust camera settings and exposure time as necessary to observe the target. Video Mode allows the MallinCam to image daytime objects such as the Sun, as well as bright nighttime objects such as the Moon and some planets. SenseUp Mode is used for imaging fainter planets, along with bright stars. Hyper Mode is used for imaging very faint deep sky objects. Several setting profiles have been saved for notable targets that can be used as a template. They can be accessed by clicking File $>$ Open Settings $>$ Select an .mc file $>$ Open.}
+   \multicolumn{1}{m{\textwidth}}{\step The MallinCam should now be in focus. From here, slew to your target object and adjust camera settings and exposure time as necessary to observe the target. Video Mode allows the MallinCam to image daytime objects such as the Sun, as well as bright nighttime objects such as the Moon and some planets. SenseUp Mode is used for imaging fainter planets, along with bright stars. Hyper Mode is used for imaging very faint deep sky objects. Several setting profiles have been saved for notable targets that can be used as a template. They can be accessed by clicking File $>$ Open Settings $>$ Select an .mc file $>$ Open. Suggested target-specific settings can be found in Appendices J and K of the Mallincam User's Manual \cite{mallincam}.}
 \end{longtable}
 
 \begin{longtable}{c}
@@ -533,7 +677,7 @@ You will need:
 											Place the bag in a dark location for at least 12 hours.} 
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.45\textwidth]{./images/mallincam/dew/unscrewed_in_bag.jpg}}\\
-    \multicolumn{1}{m{.5\textwidth}}{\step Without opening the bag, firmly screw the focal reducer into the MallinCam window, sealing the dry
+    \multicolumn{1}{m{.5\textwidth}}{\step \textbf{Without opening the bag}, firmly screw the focal reducer into the MallinCam window, sealing the dry
     										air around the CCD.} 
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.45\textwidth]{./images/mallincam/dew/screwed_in_bag.jpg}}\\
@@ -596,6 +740,12 @@ If that doesn't work and you are using Miloslick for the first time on a new com
 
 
 \section{Rainbow Optics Star Spectroscope}
+\subsection{Eyepiece Observing}
+Use MallinCam spacer.\begin{equation}
+•
+\end{equation}
+\subsection{Spectroscope + MallinCam Setup}
+
 
 \section{Ash Dome}
 In the summer of 2013 the roof of ESS was renovated and the original observatory dome was upgraded to a motorized (Model `R') Ash Dome.
@@ -720,19 +870,21 @@ Ideally, this should be done only by someone from the machine shop.
 	\end{center}
 \end{figure}
 
-\subsection{Dome Troubleshooting}
-
-\par In the event that the dome loses power, do not leave the shutter open. Perform the following actions to close the dome:
+\subsection{Dome Troubleshooting}\label{ssec:dome_trouble}
+\noindent\textbf{Issue:}\\
+In the event that the dome loses power, do not leave the shutter open. Perform the following actions to close the dome:
 
 \setcounter{rowcount}{0}
 \begin{longtable}{c}    
     \multicolumn{1}{m{\textwidth}}{\step Ensure that the main dome power switch is \textbf{OFF}.}
 \end{longtable}
-\vspace{-3em}
+\vspace{-2em}
 \begin{longtable}{cc}    
     \multicolumn{1}{m{.75\textwidth}}{\step In order to close the lower shutter, you must disengage the spring arm that holds the lower shutter open.
-    To disengage the spring arm you must unhinge the tension spring from the arm (pictured).
-    The location of the spring in the context of the entire lower shutter is shown in Figure \ref{apdx:lower_shutter}.
+    To disengage the spring arm you must remove the eye-bolt that holds the top hook of the tension spring (pictured)
+    by unscrewing the nut on top of the L-bracket.
+    There are monkey wrenches in the dome cabinet.
+    The location of the spring and bolt in the context of the entire lower shutter is shown in Figure \ref{apdx:lower_shutter}.
     If the lower shutter is fully open then there should be no tension on the spring and it should come off easily.}
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.2\textwidth]{./images/dome/spring_arm.png}}
@@ -756,7 +908,6 @@ Ideally, this should be done only by someone from the machine shop.
 
 
 \section*{Acknowledgements}
-\thispagestyle{empty}
 
 Thank you to Bent Neilsen from the Physics Labs for letting me (permanently) borrow several small pieces of equipment.
 Thank you to Matt Wahl and Stan Metchev for filling in the blanks on some of Betsy's more eccentric behaviors.
@@ -820,6 +971,7 @@ and the 1.25'' adapter.
 The following quick-look table provides the focal parameters for all configurations
 of the MFR-5 focal reducer and MallinCam on both the LX200 and C8s.
 The f/ratio and reduction factor measurements were obtained from Thompson, 2013 \cite{thompson13}.
+On it's own, the MallinCam behaves like an 8mm objective with a 50$\deg$ apparent field-of-view.
 
 \begin{center}  
 \small{
@@ -828,31 +980,33 @@ The f/ratio and reduction factor measurements were obtained from Thompson, 2013 
 	\textbf{Configuration} & \textbf{f/ratio} & \thead{\bf reduction\\ \bf factor} & \multicolumn{2}{c|}{\textbf{TFOV (arcmin)}} & \multicolumn{2}{c|}{\textbf{turns to focus}}  \\
 										&			&			&	LX200	&	C8		&	LX200	& 	C8 \\ [-1ex]
 	\hline
-	"B" + "A" 		 					&	4.01		&	0.501	& 	13.471	&	23.952	&			&		\\ [-1ex]
+	No focal reducer		 				&	f/10.00	&	1.000	& 	6.75		&	12.00	&			&		\\ [-1ex]								
 	\hline
-	5mm + "B" + "A" 	  					&	3.27		&	0.409	& 	16.502	&	29.340	&			&		\\ [-1ex]
+	"B" + "A" 		 					&	f/4.01	&	0.501	& 	13.471	&	23.952	&			&		\\ [-1ex]
 	\hline
-	10mm + "B" + "A" *  					&	2.48		&	0.311	& 	21.701	&	38.585	&			&		\\ [-1ex]
+	5mm + "B" + "A" 	  					&	f/3.27	&	0.409	& 	16.502	&	29.340	&			&		\\ [-1ex]
 	\hline
-	"B" + 5mm + "A"   					&	3.64		&	0.455	& 	14.833	&	26.374	&			&		\\ [-1ex]
+	10mm + "B" + "A" *  					&	f/2.48	&	0.311	& 	21.701	&	38.585	&			&		\\ [-1ex]
 	\hline
-	10mm + "B" + 5mm + "A" *$^{\dagger}$ &	2.22		&	0.277	& 	24.365	&	43.321	&			&		\\ [-1ex]
+	"B" + 5mm + "A"   					&	f/3.64	&	0.455	& 	14.833	&	26.374	&			&		\\ [-1ex]
 	\hline
-	"B" 									&	6.75		&	0.844	& 	7.997	&	14.218	&			&		\\ [-1ex]
+	10mm + "B" + 5mm + "A" *$^{\dagger}$ &	f/2.22	&	0.277	& 	24.365	&	43.321	&			&		\\ [-1ex]
 	\hline
-	5mm + "B"							&	6.29		&	0.786	& 	8.587	&	15.267	&			&		\\ [-1ex]
+	"B" 									&	f/6.75	&	0.844	& 	7.997	&	14.218	&			&		\\ [-1ex]
 	\hline
-	10mm + "B"							&	5.80		&	0.725	& 	9.309	&	16.552	&			&		\\ [-1ex]
+	5mm + "B"							&	f/6.29	&	0.786	& 	8.587	&	15.267	&			&		\\ [-1ex]
 	\hline
-	15mm + "B"							&	5.30 	&	0.662	& 	10.195	&	18.127	&			&		\\ [-1ex]
+	10mm + "B"							&	f/5.80	&	0.725	& 	9.309	&	16.552	&			&		\\ [-1ex]
 	\hline
-	"A" 									&	5.46		&	0.683	& 	9.882	&	17.570	&			&		\\ [-1ex]
+	15mm + "B"							&	f/5.30 	&	0.662	& 	10.195	&	18.127	&			&		\\ [-1ex]
 	\hline
-	5mm + "A" 							&	5.10 	&	0.638	& 	10.579	&	18.809	&			&		\\ [-1ex]
+	"A" 									&	f/5.46	&	0.683	& 	9.882	&	17.570	&			&		\\ [-1ex]
 	\hline
-	10mm + "A"							&	4.69 	&	0.587	& 	11.498	&	20.443	&			&		\\ [-1ex]
+	5mm + "A" 							&	f/5.10 	&	0.638	& 	10.579	&	18.809	&			&		\\ [-1ex]
 	\hline
-	15mm + "A"							&	4.29		&	0.536	& 	12.592	&	22.388	&			&		\\ 
+	10mm + "A"							&	f/4.69 	&	0.587	& 	11.498	&	20.443	&			&		\\ [-1ex]
+	\hline
+	15mm + "A"							&	f/4.29	&	0.536	& 	12.592	&	22.388	&			&		\\ 
 	\hline
 \end{tabular}}\\
 \captionof{table}{F/ratio, reduction factor, true field-of-view, and 
@@ -876,8 +1030,8 @@ The f/ratio and reduction factor measurements were obtained from Thompson, 2013 
 		\label{azimuth_motor}
 	\end{center}
 	\caption{A schematic detailing the components of the lower shutter.
-			In the event of power loss, unhook the spring marked by the dashed circle in
-			order to disengage the spring arm and close the door.}
+			In the event of power loss, remove the eye-bolt holding the spring marked by
+			the dashed circle in order to disengage the spring arm and close the door.}
 	\label{apdx:lower_shutter}
 \end{figure}
 
