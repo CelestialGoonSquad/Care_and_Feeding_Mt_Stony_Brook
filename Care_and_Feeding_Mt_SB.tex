@@ -268,7 +268,7 @@ Note: This may decrease pointing accuracy in other regions of the sky. Never syn
 \begin{tabular}{ccc}
 Number Key	& Autostar Description	& Rate\\
 \hline
-1			& 1x				& 0.165 arcmin/s (default)\\[-1ex]
+1			& 1x				& 9.9 arcsec/s (0.66*sidereal, default)\\[-1ex]
 2			& 2x				& 0.5 arcmin/s\\[-1ex]
 3			& 8x				& 2 arcmin/s\\[-1ex]
 4			& 16x			& 4 arcmin/s\\[-1ex]
@@ -591,7 +591,7 @@ The following items are required for this setup:
 
 \subsection{Streaming with YouTube Live and OBS}
 \subsection{Maintenance}
-\subsubsection{Dust Removal}
+\subsubsection{Dust Removal} \label{sssec:dust}
 
 \begin{figure}[H] 
 	\begin{center}
@@ -633,6 +633,24 @@ The following procedure requires extreme care, a delicate touch, and a bit of gu
 
 
 \subsubsection{Dew and Frost Prevention} \label{sssec:dew}
+
+\begin{figure}[H]
+	\begin{tikzpicture}
+    
+    \begin{scope}[xshift=-1mm, yshift=0cm]
+    \node {\includegraphics[width=.59\textwidth]{./images/mallincam/dew/dew_spectrum.png}};
+    \end{scope}    
+    
+    \begin{scope}[xshift=.5\textwidth, yshift=0]
+    \node {\includegraphics[width=.4\textwidth]{./images/mallincam/dew/frost.png}};
+    \end{scope}
+    
+	\end{tikzpicture}
+	\caption{In the image of a stellar spectrum on the left, dark spots can be seen as condensation forms on the sensor.
+				In the image of an out-of-focus star on the right, the condensation has turned to frost resulting in a 
+				marbling pattern.}
+\end{figure}
+
 
 The MallinCam is equipped with a very efficient Peltier cooling system capable of cooling the CCD to 27$\deg$ F below ambient.
 When moisture in the air is exposed to the chip at higher cooling levels, it will condense on the sensor.
@@ -740,11 +758,55 @@ If that doesn't work and you are using Miloslick for the first time on a new com
 
 
 \section{Rainbow Optics Star Spectroscope}
+The Rainbow Optics Star Spectroscope is a blazed diffraction grating inside a 1.25'' cell,
+capable of displaying spectra through an eyepiece or CCD camera.
+With a line density of 200 lines/mm \cite{hopkins_spec} this spectroscope has a lower resolution than the Astronomy
+Department's DADOS Spectrograph and the absence of a slit makes it difficult to observe spectra
+of objects with a large angular size. However, the lower dispersion results in a brighter
+first-order spectrum making this spectroscope the ideal outreach tool for teaching about spectroscopy.
+With the right combination of telescope, lenses and spacers, it is even possible to fit the zero-order star
+and first-order spectrum in the same field-of-view. The spectroscope works best for bright stars with strong
+absorption features or with gas discharge tubes to demonstrate the spectral signatures of different elements. 
+While one should avoid cleaning the grating or lens cells unless \textit{absolutely necessary},
+the same method as the one used to clean the MallinCam sensor (Sec. \ref{sssec:dust}) may be applied.
+Take good care of this; they don't make them anymore!
+
+%\begin{equation}
+%\Delta\lambda=\frac{\lambda}{Nn} \label{eq:difflimit}
+%\end{equation}
+
 \subsection{Eyepiece Observing}
-Use MallinCam spacer.\begin{equation}
-•
-\end{equation}
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{./images/rbw_optics/spectroscope_wspacer.jpeg} 
+		\caption{}
+		\label{mfr5}
+	\end{center}
+\end{figure}
+
+
 \subsection{Spectroscope + MallinCam Setup}
+By combining the Rainbow Optics Star Spectroscope with the MallinCam, one can display or capture
+the spectra of dimmer targets with relatively short integration times.
+This setup is ideal for outreach to display the spectrum on a monitor for many people to view at once.
+
+\begin{figure}[H] 
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{./images/rbw_optics/vega_spec_labeled.png} 
+		\caption{}
+		\label{mfr5}
+	\end{center}
+\end{figure}
+
+\setcounter{rowcount}{0}
+\begin{longtable}[t]{cc}
+	\multicolumn{1}{m{.5\textwidth}}{\step First things first.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/rbw_optics/vega_spec_thin.png}}\vspace{2em}\\
+    	\multicolumn{1}{m{.5\textwidth}}{\step Second things second.} 
+    & 
+    \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/rbw_optics/vega_spec_spread.png}}
+\end{longtable}
 
 
 \section{Ash Dome}
@@ -762,11 +824,11 @@ Never operate the dome with any of the guards removed.
 Never allow untrained personnel to operate the observatory dome.
 Do not at any time attempt to open or close the upper shutter using the manual override without insuring electrical power is off.
 Serious injury may occur.}
-The dome shutter drive units use a drum switch control.
-The lever action is limited with a safety slide-lock.
-With the lever in the neutral position the slide-lock must be moved manually from either one side or to the other side of the switch.
-This action allows the operator to move the lever from neutral to \textbf{OPEN} or \textbf{CLOSE}.
-The slide-lock causes a forced delay.
+%The dome shutter drive units use a drum switch control.
+%The lever action is limited with a safety slide-lock.
+%With the lever in the neutral position the slide-lock must be moved manually from either one side or to the other side of the switch.
+%This action allows the operator to move the lever from neutral to \textbf{OPEN} or \textbf{CLOSE}.
+%The slide-lock causes a forced delay.
 \par The dome may be operated either by remote control or the control panels.
 When a button is pressed on either the remote or panel and a signal is sent, the yellow light on the panel will turn on.
 A five-second time delay is installed into the command system prior to any shutter motions.
@@ -870,7 +932,7 @@ Ideally, this should be done only by someone from the machine shop.
 	\end{center}
 \end{figure}
 
-\subsection{Dome Troubleshooting}\label{ssec:dome_trouble}
+\subsection{Dome and Roof Troubleshooting}\label{ssec:dome_trouble}
 \noindent\textbf{Issue:}\\
 In the event that the dome loses power, do not leave the shutter open. Perform the following actions to close the dome:
 
@@ -906,6 +968,17 @@ In the event that the dome loses power, do not leave the shutter open. Perform t
     They will need to re-wind the lower shutter winch cable.}
 \end{longtable}
 
+\noindent\textbf{Issue:}\\
+The lights that line the railing on the roof don't turn on.
+\begin{longtable}{cc}    
+    \multicolumn{1}{m{.5\textwidth}}{On occasion the switches for the lights that line the railing on the roof of ESS will appear not to work.
+    									Open the cover on the outlet above the light switch near the northern door to the roof.
+    									There are two buttons between the two outlets.
+    									Press the top button (RESET) followed by the bottom button (TEST).
+    									The light switches should now work.}
+    & 
+    \raisebox{-.8\totalheight}{\includegraphics[width=.5\textwidth]{./images/dome/outlet}}
+\end{longtable}
 
 \section*{Acknowledgements}
 
