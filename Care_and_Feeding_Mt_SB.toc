@@ -15,17 +15,17 @@
 \contentsline {subsection}{\numberline {4.2}Streaming with YouTube Live and OBS}{21}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Maintenance}{21}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Dust Removal}{21}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Dew and Frost Prevention}{22}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2}Dew and Frost Prevention}{23}{subsubsection.4.3.2}
 \contentsline {subsection}{\numberline {4.4}MallinCam Troubleshooting}{25}{subsection.4.4}
 \contentsline {section}{\numberline {5}Rainbow Optics Star Spectroscope}{27}{section.5}
 \contentsline {subsection}{\numberline {5.1}Eyepiece Observing}{27}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Spectroscope + MallinCam Setup}{27}{subsection.5.2}
-\contentsline {section}{\numberline {6}Ash Dome}{30}{section.6}
-\contentsline {subsection}{\numberline {6.1}Operation}{30}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Control Panel Operating Instructions}{30}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Remote Control Operating Instructions}{31}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}Maintenance}{32}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Dome and Roof Troubleshooting}{34}{subsection.6.3}
-\contentsline {section}{\numberline {A}Response Curves for SBIG Filters}{38}{appendix.A}
-\contentsline {section}{\numberline {B}MallinCam Focal Reduction}{39}{appendix.B}
-\contentsline {section}{\numberline {C}Ash Dome Lower Shutter}{41}{appendix.C}
+\contentsline {subsection}{\numberline {5.2}Spectroscope + MallinCam Setup}{29}{subsection.5.2}
+\contentsline {section}{\numberline {6}Ash Dome}{31}{section.6}
+\contentsline {subsection}{\numberline {6.1}Operation}{31}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Control Panel Operating Instructions}{31}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Remote Control Operating Instructions}{32}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Maintenance}{33}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Dome and Roof Troubleshooting}{35}{subsection.6.3}
+\contentsline {section}{\numberline {A}Response Curves for SBIG Filters}{39}{appendix.A}
+\contentsline {section}{\numberline {B}MallinCam Focal Reduction}{40}{appendix.B}
+\contentsline {section}{\numberline {C}Ash Dome Lower Shutter}{42}{appendix.C}

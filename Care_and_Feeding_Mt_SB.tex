@@ -130,7 +130,9 @@ It is operated via the Autostar II hand controller, which can issue slew command
 The telescope is equipped with a 8x50 finder scope which has a 50mm objective and 8x magnification.
 The telescope was installed in 2010 and has accumulated wear and tear.
 The gears in the drive motor are worn and will occasionally slip, causing the physical pointing to disagree with the pointing in the Autostar.
-The knob to lock the primary mirror is known to come off and is difficult to reattach so it is best to leave the mirror unlocked. When the telescope was assembled, the declination (DEC) setting circle stickers were were placed on the wrong sides. Since the setting circle with the angles labeled can be adjusted independent of the telescope, the angles do not refer to a meaningful DEC.
+The knob to lock the primary mirror is known to come off and is difficult to reattach so it is best to leave the mirror unlocked.
+% Is this next bit correct?
+When the telescope was assembled, the declination (DEC) setting circle stickers were were placed on the wrong sides. Since the setting circle with the angles labeled can be adjusted independent of the telescope, the angles do not refer to a meaningful DEC.
 All directions in this section are given relative to the user looking at the telescope control panel, facing south.
 It is recommended that you prop both dome doors open while observing with the LX200 to maintain stable airflow around the telescope, which will improve seeing.
 \par There are two default positions that are programmed into the LX200, shown below.
@@ -454,7 +456,7 @@ For any issues with the MallinCam including replacement parts, hardware failures
 \end{longtable}   
 
 \subsection{Astrofest Setup\\
-\small(MallinCam with Miloslick Control + Meade LX-200 + TV)}
+\small(MallinCam with Miloslick Control + Meade LX-200 + TV)} \label{ssec:Astrofest_Setup}
 This setup configuration is ideal for outreach events utilizing Meade LX-200 (and can also be extended to the C8s), where the MallinCam can be controlled from a laptop via the Miloslick control software and the camera images displayed on the TV.
 This setup is also quite complicated and uses an absurd number of cables, so be wary of cable tangle and watch your step.
 The true field of view with this setup is $\sim$17'.
@@ -551,7 +553,7 @@ The following items are required for this setup:
 	
 	\multicolumn{1}{m{.5\textwidth}}{\step Collect the tangled mess of cables at your feet and tie them together with bread ties. Keep them between the chair legs to prevent tripping.
 	\vspace{4em} 
-    \par \step Plug one end of the S-Video cable into the S-Video input on the MallinCam and the other end into the S-video input on the converter box.} 
+    \par \step Plug one end of the S-Video cable into the S-VHS input on the MallinCam and the other end into the S-video input on the converter box.} 
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/MallinCam/astrofest_setup/svideo12.jpg}}\\
     
@@ -571,7 +573,7 @@ The following items are required for this setup:
     
     \multicolumn{1}{m{\textwidth}}{\step To bring the star into focus from the 40mm eyepiece to the MallinCam, turn the coarse manual focus knob on the telescope $\sim$3 3/4 turns, counterclockwise. Simultaneously, decrease the exposure time in Miloslick so as not to overexpose the CCD. Fine focus adjustments can be made using the microfocuser on the Autostar II hand controller.}\\
     
-   \multicolumn{1}{m{\textwidth}}{\step The MallinCam should now be in focus. From here, slew to your target object and adjust camera settings and exposure time as necessary to observe the target. Video Mode allows the MallinCam to image daytime objects such as the Sun, as well as bright nighttime objects such as the Moon and some planets. SenseUp Mode is used for imaging fainter planets, along with bright stars. Hyper Mode is used for imaging very faint deep sky objects. Several setting profiles have been saved for notable targets that can be used as a template. They can be accessed by clicking File $>$ Open Settings $>$ Select an .mc file $>$ Open. Suggested target-specific settings can be found in Appendices J and K of the Mallincam User's Manual \cite{mallincam}.}
+   \multicolumn{1}{m{\textwidth}}{\step The MallinCam should now be in focus. From here, slew to your target object and adjust camera settings and exposure time as necessary to observe the target. Video Mode allows the MallinCam to image daytime objects such as the Sun, as well as bright nighttime objects such as the Moon and some planets. SenseUp Mode is used for imaging fainter planets, along with bright stars. Hyper Mode is used for imaging very faint deep sky objects. Several setting profiles have been saved for notable targets that can be used as a template. They can be accessed in Miloslick by clicking File $>$ Open Settings $>$ Select an .mc file $>$ Open. Suggested target-specific settings can be found in Appendices J and K of the Mallincam User's Manual \cite{mallincam}.}
 \end{longtable}
 
 \begin{longtable}{c}
@@ -609,13 +611,22 @@ A good rule of thumb for cleaning telescope optics is to do so \textit{only when
 Too-frequent cleaning can strip the coating on the lenses and dust accumulation can be prevented by keeping the optics covered when not in use.
 Most of the materials required for this procedure can be found in the front pocket of the blue lunchbox where the camera is stored.
 You will need:
-\begin{enumerate}[label=\protect\circled{\arabic*}]
+
+\begin{longtable}[t]{cc}
+	\multicolumn{1}{m{.4\textwidth}}{
+		\begin{enumerate}[label=\protect\circled{\arabic*}]
 	\item Rubber bulb blower
 	\item Magnifying glass
 	\item 91\% or 99\% isopropyl alcohol (anything lower than 91\% will leave streaks)
 	\item Microfiber cloth
-	\item Small cotton swab\\
-\end{enumerate}
+	\item Small cotton swab
+	\end{enumerate}}
+
+	&		
+			
+	\raisebox{-.5\totalheight}{\includegraphics[width=.4\textwidth]{./images/dust/blower.jpg}}
+\end{longtable}
+
 The following procedure requires extreme care, a delicate touch, and a bit of guts:
 \begin{enumerate}
 	\item First try to blow the dust off with the rubber bulb blower
@@ -659,6 +670,8 @@ Repeated frost buildup has the potential to damage the CCD.
 The only way to prevent moisture from condensing on the sensor is to seal dry air inside the chamber around the CCD.
 The following procedure is adapted from Woody Schlom's dew prevention guide.
 We use the MFR-5 focal reducer to seal the chamber but, if no focal reduction is desired, another optically flat element can be used.
+Any of the MFR-5 configurations from Appendix \ref{sssec:focal_reduction} may be used, as long as there is at least one piece of glass
+isolating the CCD from the outside air.
 The procedure can be extended to dehumidify other instruments.
 You will need:
 
@@ -694,7 +707,7 @@ You will need:
 											or you won't be able to screw the focal reducer in.
 											Place the bag in a dark location for at least 12 hours.} 
     & 
-    \raisebox{-.5\totalheight}{\includegraphics[width=.45\textwidth]{./images/mallincam/dew/unscrewed_in_bag.jpg}}\\
+    \raisebox{-.5\totalheight}{\includegraphics[width=.45\textwidth]{./images/mallincam/dew/unscrewed_in_bag.jpg}}\\[2em]
     \multicolumn{1}{m{.5\textwidth}}{\step \textbf{Without opening the bag}, firmly screw the focal reducer into the MallinCam window, sealing the dry
     										air around the CCD.} 
     & 
@@ -758,17 +771,17 @@ If that doesn't work and you are using Miloslick for the first time on a new com
 
 
 \section{Rainbow Optics Star Spectroscope}
-The Rainbow Optics Star Spectroscope is a blazed diffraction grating inside a 1.25'' cell,
+The Rainbow Optics Star Spectroscope is a blazed, transmission diffraction grating inside a 1.25'' filter cell,
 capable of displaying spectra through an eyepiece or CCD camera.
-With a line density of 200 lines/mm \cite{hopkins_spec} this spectroscope has a lower resolution than the Astronomy
+With a line density of 200 lines/mm (Hopkins, 2014\cite{hopkins_spec}) this spectroscope has a lower maximum resolution than the Astronomy
 Department's DADOS Spectrograph and the absence of a slit makes it difficult to observe spectra
-of objects with a large angular size. However, the lower dispersion results in a brighter
+of extended sources or in crowded star fields. However, the lower dispersion results in a brighter
 first-order spectrum making this spectroscope the ideal outreach tool for teaching about spectroscopy.
 With the right combination of telescope, lenses and spacers, it is even possible to fit the zero-order star
-and first-order spectrum in the same field-of-view. The spectroscope works best for bright stars with strong
-absorption features or with gas discharge tubes to demonstrate the spectral signatures of different elements. 
+and first-order spectrum in the same field-of-view. The spectroscope works best for bright stars with prominent
+absorption features (Eg. A-types like Sirius or Vega) or with gas discharge tubes to demonstrate the spectral signatures of different elements. 
 While one should avoid cleaning the grating or lens cells unless \textit{absolutely necessary},
-the same method as the one used to clean the MallinCam sensor (Sec. \ref{sssec:dust}) may be applied.
+the same method as the one used to clean the MallinCam sensor (Sec. \ref{sssec:dust}) may be employed.
 Take good care of this; they don't make them anymore!
 
 %\begin{equation}
@@ -776,14 +789,61 @@ Take good care of this; they don't make them anymore!
 %\end{equation}
 
 \subsection{Eyepiece Observing}
+Use of the Star Spectroscope with an eyepiece and telescope is best applied to bright objects with prominent spectral features.
+The configuration of optical components is shown below.
 \begin{figure}[H] 
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{./images/rbw_optics/spectroscope_wspacer.jpeg} 
-		\caption{}
+		\caption{The disassembled Star Spectroscope.
+				Any of the 1.25'' MallinCam spacers can be used, which do not contain any optics.}
 		\label{mfr5}
 	\end{center}
 \end{figure}
+The procedure to bring a star and its spectrum into focus in the eyepiece is described below.
+Ideally one should begin an observation with the spectroscope by performing the procedure on a bright A-type
+to achieve optimal focus before moving on to more difficult targets with less-obvious features.
+\begin{enumerate}
+	\item Focus the star in the field-of-view of a medium-powered eyepiece (12-25mm).
+	\item Screw the grating cell into the bottom of the eyepiece (or spacer)
+			\footnote[*]{If using with a C8, instead screw the grating cell into the threaded end of the star
+					diagonal specifically designated for use with the Star Spectroscope.
+					Stored on top shelf of telescope room.}.
+			You will notice the image of the star (a bit redder and dimmer now) flanked by spectra
+			extending off in either direction.
+			One of the first-order spectra will be brighter than the other.
+	\item[] \begin{figure}[H]
+				\begin{center}
+					\includegraphics[width=.8\textwidth]{./images/rbw_optics/zero_and_first_order.png}
+					\caption{From left to right: Dimmer first order spectrum, zero-order star, and 
+							brighter first-order spectrum (Hopkins, 2014\cite{hopkins_spec})}
+				\end{center}	
+			\end{figure}
+	\item Rotate the eyepiece inside the star diagonal so that the spectrum is horizontal from the viewer's perspective
+	\item Center the brighter first-order spectrum in the field-of-view and adjust the focus until the spectrum becomes
+			as narrow as possible
+	\item Place the lens cell centered over the eyepiece and rotate the lens cell until the height of the spectrum is maximized.
+			When this is achieved, tighten the thumbscrews.
+			The spectrum should appear wider vertically than when viewed through the eyepiece.
+			You should begin to see spectral lines.
+	\item Adjust the focus again to sharpen the spectral lines by turning the focus knob very slightly counter-clockwise.
+\end{enumerate}
 
+You may want to increase the dispersion of the spectrum, ie. the width of the spectrum, and by proxy resolution.
+This can be done by inserting spacers to increase the distance between eyepiece lens and the grating cell.
+However, this has it's limits. As the dispersion increases, the brightness of the spectrum at a particular wavelength decreases.
+Additionally, too much spacing will lead to significant vignetting.
+%For example, the combination of the spectroscope, a 25mm eyepiece, and a C8 (F/10, 8'') will be able to fit the zero-order star and
+%first-order spectrum in the same field-of-view.
+%To expand the image so just the first order spectrum is seen and fill most of the view, a 17 mm or even 12 mm will provide an excellent expanded view of just the first order spectrum.
+\par A novel teaching method for introducing spectroscopy is to use the spectroscope with a C8 telescope,
+an 18mm eyepiece and a gas discharge tube.
+\begin{enumerate}
+	\item Place the gas discharge tube roughly fifty feet from the telescope inside a cardboard box.
+	\item Cut a narrow, vertical slit in the cardboard box, directly in front of the brightest part of the
+		discharge tube on the side facing the telescope.
+	\item Focus the telescope, eyepiece, spectroscope combination on the slit.
+	\item You should be able to observe the emission spectrum of whatever gas is in the discharge tube
+\end{enumerate}
 
 \subsection{Spectroscope + MallinCam Setup}
 By combining the Rainbow Optics Star Spectroscope with the MallinCam, one can display or capture
@@ -792,21 +852,41 @@ This setup is ideal for outreach to display the spectrum on a monitor for many p
 
 \begin{figure}[H] 
 	\begin{center}
-		\includegraphics[width=.8\textwidth]{./images/rbw_optics/vega_spec_labeled.png} 
-		\caption{}
+		\includegraphics[width=.6\textwidth]{./images/rbw_optics/vega_spec_labeled.png} 
+		\caption{A spectrum of Vega collected using the Star Spectroscope, the MallinCam,
+				 the MFR-5 focal reducer in the \textit{10mm + "B" + "A"} configuration,
+				 and the Meade LX200 telescope. Prominent H-Balmer absorption lines are
+				 visible in addition to an atmospheric O$_2$ line.}
 		\label{mfr5}
 	\end{center}
 \end{figure}
 
 \setcounter{rowcount}{0}
-\begin{longtable}[t]{cc}
-	\multicolumn{1}{m{.5\textwidth}}{\step First things first.} 
+\begin{longtable}{c}
+	\multicolumn{1}{m{\textwidth}}{\step Follow the procedure in Section \ref{ssec:Astrofest_Setup} to assemble the MallinCam
+									and focus on a bright star. (You don't necessarily need to connect a monitor with the 
+									frame grabber if you are only trying to capture images of spectra.)} \\
+	\multicolumn{1}{m{\textwidth}}{\step Set the MallinCam to a short exposure time (Video Mode) and remove it
+									from the star diagonal. Screw the Star Spectroscope onto the end of the 1.25'' adapter or 
+									MFR-5
+									\footnote[$\dagger$]{If using with a C8, instead screw the grating cell into the threaded end of the star
+												diagonal specifically designated for use with the Star Spectroscope.
+												Stored on top shelf of telescope room.}.} \\
+\end{longtable}\begin{longtable}[t]{cc}
+	\multicolumn{1}{m{.5\textwidth}}{\step With the grating cell screwed in completely, the first order spectrum will appear down 
+									and to the right of the star. Depending on the dispersion, it may be outside the field of view.
+									In order to view the full spectrum, it will have to be horizontal on the chip.
+									Through trial and error, remove the MallinCam from the telescope, unscrew the grating cell by a 
+									fraction of a turn, reinsert the MallinCam, and check if the spectrum is horizontal. 
+									The spectrum will be nearly in focus and appear as a thin line.} 
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/rbw_optics/vega_spec_thin.png}}\vspace{2em}\\
-    	\multicolumn{1}{m{.5\textwidth}}{\step Second things second.} 
+    	\multicolumn{1}{m{.5\textwidth}}{\step Since there is no way to de-focus the spectrum in one dimension with the grating cell when
+										using a CCD, we must de-focus the telescope. Turn the telescope coarse adjustment knob until
+										the spectrum has widened several times. Spectral lines, if present, should become obvious.} 
     & 
     \raisebox{-.5\totalheight}{\includegraphics[width=.5\textwidth]{./images/rbw_optics/vega_spec_spread.png}}
-\end{longtable}
+\end{longtable} 
 
 
 \section{Ash Dome}
@@ -824,6 +904,7 @@ Never operate the dome with any of the guards removed.
 Never allow untrained personnel to operate the observatory dome.
 Do not at any time attempt to open or close the upper shutter using the manual override without insuring electrical power is off.
 Serious injury may occur.}
+%%Is this necessary?
 %The dome shutter drive units use a drum switch control.
 %The lever action is limited with a safety slide-lock.
 %With the lever in the neutral position the slide-lock must be moved manually from either one side or to the other side of the switch.
@@ -934,8 +1015,10 @@ Ideally, this should be done only by someone from the machine shop.
 
 \subsection{Dome and Roof Troubleshooting}\label{ssec:dome_trouble}
 \noindent\textbf{Issue:}\\
-In the event that the dome loses power, do not leave the shutter open. Perform the following actions to close the dome:
+In the event that the dome loses power, do not leave the shutter open.\\
 
+\noindent\textbf{Solution:}\\
+Perform the following actions to close the dome:
 \setcounter{rowcount}{0}
 \begin{longtable}{c}    
     \multicolumn{1}{m{\textwidth}}{\step Ensure that the main dome power switch is \textbf{OFF}.}
@@ -970,8 +1053,10 @@ In the event that the dome loses power, do not leave the shutter open. Perform t
 
 \noindent\textbf{Issue:}\\
 The lights that line the railing on the roof don't turn on.
+
 \begin{longtable}{cc}    
-    \multicolumn{1}{m{.5\textwidth}}{On occasion the switches for the lights that line the railing on the roof of ESS will appear not to work.
+    \multicolumn{1}{m{.5\textwidth}}{\textbf{Solution:} On occasion the switches for the lights that line the railing on 
+    									the roof of ESS will appear not to work.
     									Open the cover on the outlet above the light switch near the northern door to the roof.
     									There are two buttons between the two outlets.
     									Press the top button (RESET) followed by the bottom button (TEST).
@@ -987,7 +1072,7 @@ Thank you to Matt Wahl and Stan Metchev for filling in the blanks on some of Bet
 Thank you to Larry Faltz and Jack Huerkamp for their extensive help with the MallinCam; helping to troubleshoot issues and recommending maintenance techniques.
 Thank you to the Westchester Amateur Astronomers, especially Doug Baum and John Paladini, for their continued support and guidance in imaging techniques and instrumentation.
 Thank you to Riley and Jim from Ash Manufacturing for providing schematic diagrams.
-Thank you to the ESS Building Manager, Owen Evans, for giving me free reign after hours and for lending his power tools.
+Thank you to Owen Evans for giving me free reign after hours and for lending his power tools.
 Finally, the construction of this manual would not have been possible without several dedicated
 undergraduates who spent many late nights (and occasionally mornings) at the
 telescope: Gary Haireti, Blaire Ness, Timothy Sarro, Daniel Welborn, and
@@ -1043,7 +1128,6 @@ and the 1.25'' adapter.
 \end{figure}
 The following quick-look table provides the focal parameters for all configurations
 of the MFR-5 focal reducer and MallinCam on both the LX200 and C8s.
-The f/ratio and reduction factor measurements were obtained from Thompson, 2013 \cite{thompson13}.
 On it's own, the MallinCam behaves like an 8mm objective with a 50$\deg$ apparent field-of-view.
 
 \begin{center}  
@@ -1088,7 +1172,9 @@ On it's own, the MallinCam behaves like an 8mm objective with a 50$\deg$ apparen
 				The configurations are described listing components from closest to
 				furthest from the window of the MallinCam. Configurations
 				identified with an asterisk or dagger may result in significant 
-				vignetting or coma respectively, especially on smaller scopes.}
+				vignetting or coma respectively, especially on smaller scopes.
+				F/ratio and reduction factor measurements were obtained from Thompson,
+				2013 \cite{thompson13}.}
 				\label{tab:focal_reduction} 
 \vspace{.4 cm}
 \end{center}

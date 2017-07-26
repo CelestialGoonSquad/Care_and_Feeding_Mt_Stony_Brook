@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 JUL 2017 21:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 JUL 2017 09:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,7 +937,7 @@ l.127 \section{Meade LX200 14'' Telescope}
 
 
 ]
-Overfull \hbox (0.68272pt too wide) in paragraph at lines 128--136
+Overfull \hbox (0.68272pt too wide) in paragraph at lines 128--138
 []\OT1/cmr/m/n/12 Mt. Stony Brook's pri-mary tele-scope is a 14'' f/10 Meade LX
 200GPS, Schmidt-Cassegrain
  []
@@ -947,7 +947,7 @@ File: ./images/lx200/intro/park_side.jpg Graphic file (type jpg)
 
 <use ./images/lx200/intro/park_side.jpg>
 Package pdftex.def Info: ./images/lx200/intro/park_side.jpg used on input line 
-141.
+143.
 (pdftex.def)             Requested size: 187.90271pt x 251.18195pt.
 
 <./images/lx200/intro/polarhome_side.jpg, id=159, 2613.765pt x 3296.315pt>
@@ -955,7 +955,7 @@ File: ./images/lx200/intro/polarhome_side.jpg Graphic file (type jpg)
 
 <use ./images/lx200/intro/polarhome_side.jpg>
 Package pdftex.def Info: ./images/lx200/intro/polarhome_side.jpg used on input 
-line 146.
+line 148.
 (pdftex.def)             Requested size: 199.64731pt x 251.73975pt.
  [2
 
@@ -966,26 +966,26 @@ line 146.
 File: ./images/lx200/autostar/controller_labeled.jpg Graphic file (type jpg)
  <use ./images/lx200/autostar/controller_labeled.jpg>
 Package pdftex.def Info: ./images/lx200/autostar/controller_labeled.jpg used on
- input line 202.
+ input line 204.
 (pdftex.def)             Requested size: 281.85587pt x 416.94456pt.
  [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 223.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 225.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 223.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 225.
  [5 <./images/lx200/autostar/controller_labeled.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 [6]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 282.
+(caption)                particular \caption on input line 284.
 See the caption package documentation for explanation.
 
 
@@ -994,7 +994,7 @@ File: ./images/lx200/computer_ctrl/usb_to_RS232.jpg Graphic file (type jpg)
 
 <use ./images/lx200/computer_ctrl/usb_to_RS232.jpg>
 Package pdftex.def Info: ./images/lx200/computer_ctrl/usb_to_RS232.jpg used on 
-input line 302.
+input line 304.
 (pdftex.def)             Requested size: 211.38832pt x 158.53795pt.
 
 <./images/lx200/computer_ctrl/computer_drive_panel.jpg, id=235, 4015.0pt x 2453
@@ -1003,38 +1003,38 @@ File: ./images/lx200/computer_ctrl/computer_drive_panel.jpg Graphic file (type
 jpg)
  <use ./images/lx200/computer_ctrl/computer_drive_panel.jpg>
 Package pdftex.def Info: ./images/lx200/computer_ctrl/computer_drive_panel.jpg 
-used on input line 306.
+used on input line 308.
 (pdftex.def)             Requested size: 258.36668pt x 157.85173pt.
 
-Overfull \hbox (10.67763pt too wide) in paragraph at lines 309--310
+Overfull \hbox (10.67763pt too wide) in paragraph at lines 311--312
 [][] 
  []
 
 [7] [8 <./images/lx200/computer_ctrl/usb_to_RS232.jpg> <./images/lx200/computer
 _ctrl/computer_drive_panel.jpg>] [9]
-Overfull \hbox (5.76443pt too wide) in paragraph at lines 381--382
+Overfull \hbox (5.76443pt too wide) in paragraph at lines 383--384
 \OT1/cmr/m/n/12 Sample tours can be found at []$\OT1/cmtt/m/n/12 http : / / www
  . astro . sunysb . edu / astro / astroclub / Mt _ Stony _
  []
 
 
-Overfull \hbox (6.7449pt too wide) in paragraph at lines 384--386
+Overfull \hbox (6.7449pt too wide) in paragraph at lines 386--388
 []\OT1/cmr/bx/n/12 Issue: \OT1/cmr/m/n/12 The Au-tostar dis-plays \  TAK-ING GP
 S FIX" and noth-ing hap-pens or dis-plays \  COULD
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 389.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 391.
 [10] [11]
 <./images/MallinCam/overview/x2_back.png, id=289, 921.4425pt x 789.95125pt>
 File: ./images/MallinCam/overview/x2_back.png Graphic file (type png)
 
 <use ./images/MallinCam/overview/x2_back.png>
 Package pdftex.def Info: ./images/MallinCam/overview/x2_back.png used on input 
-line 453.
+line 455.
 (pdftex.def)             Requested size: 281.85587pt x 241.62785pt.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 435--454
+Overfull \hbox (23.99998pt too wide) in alignment at lines 437--456
  [] [] 
  []
 
@@ -1043,7 +1043,7 @@ Overfull \hbox (23.99998pt too wide) in alignment at lines 435--454
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 457.
+(hyperref)                removing `\\' on input line 459.
 
 
 <./images/MallinCam/astrofest_setup/equipment_numbered.jpg, id=299, 3817.26125p
@@ -1053,21 +1053,21 @@ ype jpg)
 
 <use ./images/MallinCam/astrofest_setup/equipment_numbered.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/equipment_numbered.
-jpg used on input line 465.
+jpg used on input line 467.
 (pdftex.def)             Requested size: 446.26582pt x 323.7291pt.
  [13 <./images/MallinCam/overview/x2_back.png>] [14 <./images/MallinCam/astrofe
 st_setup/equipment_numbered.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 500--500
+Underfull \hbox (badness 1237) in paragraph at lines 502--502
 []\OT1/cmr/m/n/12 2)| Re-fer to Ap-pendix []B[] to to de-ter-mine
  []
 
@@ -1078,7 +1078,7 @@ File: ./images/MallinCam/astrofest_setup/focal_reducer.jpg Graphic file (type j
 pg)
  <use ./images/MallinCam/astrofest_setup/focal_reducer.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/focal_reducer.jpg u
-sed on input line 502.
+sed on input line 504.
 (pdftex.def)             Requested size: 234.8775pt x 176.13783pt.
 
 <./images/MallinCam/astrofest_setup/fankit.jpg, id=336, 2215.27625pt x 1995.455
@@ -1086,7 +1086,7 @@ pt>
 File: ./images/MallinCam/astrofest_setup/fankit.jpg Graphic file (type jpg)
  <use ./images/MallinCam/astrofest_setup/fankit.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/fankit.jpg used on 
-input line 506.
+input line 508.
 (pdftex.def)             Requested size: 234.8775pt x 211.55376pt.
 
 <./images/MallinCam/astrofest_setup/power_on.jpg, id=337, 4047.12pt x 1906.1212
@@ -1094,7 +1094,7 @@ input line 506.
 File: ./images/MallinCam/astrofest_setup/power_on.jpg Graphic file (type jpg)
  <use ./images/MallinCam/astrofest_setup/power_on.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/power_on.jpg used o
-n input line 510.
+n input line 512.
 (pdftex.def)             Requested size: 234.8775pt x 110.61037pt.
 
 <./images/MallinCam/astrofest_setup/rs232-usb.jpg, id=338, 3588.40625pt x 2147.
@@ -1102,7 +1102,7 @@ n input line 510.
 File: ./images/MallinCam/astrofest_setup/rs232-usb.jpg Graphic file (type jpg)
  <use ./images/MallinCam/astrofest_setup/rs232-usb.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/rs232-usb.jpg used 
-on input line 515.
+on input line 517.
 (pdftex.def)             Requested size: 234.8775pt x 140.51134pt.
 
 <./images/MallinCam/astrofest_setup/computer_connect.jpg, id=340, 4047.12pt x 2
@@ -1111,7 +1111,7 @@ File: ./images/MallinCam/astrofest_setup/computer_connect.jpg Graphic file (typ
 e jpg)
  <use ./images/MallinCam/astrofest_setup/computer_connect.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/computer_connect.jp
-g used on input line 521.
+g used on input line 523.
 (pdftex.def)             Requested size: 234.8775pt x 141.65582pt.
 
 <./images/MallinCam/astrofest_setup/frame_grabber.jpg, id=341, 4047.12pt x 3035
@@ -1120,7 +1120,7 @@ File: ./images/MallinCam/astrofest_setup/frame_grabber.jpg Graphic file (type j
 pg)
  <use ./images/MallinCam/astrofest_setup/frame_grabber.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/frame_grabber.jpg u
-sed on input line 525.
+sed on input line 527.
 (pdftex.def)             Requested size: 234.8775pt x 176.13783pt.
 
 <./images/MallinCam/astrofest_setup/frame_grabber_connect.jpg, id=342, 4047.12p
@@ -1130,17 +1130,17 @@ File: ./images/MallinCam/astrofest_setup/frame_grabber_connect.jpg Graphic file
 
 <use ./images/MallinCam/astrofest_setup/frame_grabber_connect.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/frame_grabber_conne
-ct.jpg used on input line 529.
+ct.jpg used on input line 531.
 (pdftex.def)             Requested size: 234.8775pt x 125.40501pt.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 496--530
+Overfull \hbox (23.99998pt too wide) in alignment at lines 498--532
  [] [] 
  []
 
 [15 <./images/MallinCam/astrofest_setup/focal_reducer.jpg>] [16 <./images/Malli
 nCam/astrofest_setup/fankit.jpg> <./images/MallinCam/astrofest_setup/power_on.j
 pg> <./images/MallinCam/astrofest_setup/rs232-usb.jpg>]
-Overfull \hbox (12.0pt too wide) in alignment at lines 531--535
+Overfull \hbox (12.0pt too wide) in alignment at lines 533--537
  [] 
  []
 
@@ -1153,15 +1153,15 @@ File: ./images/MallinCam/astrofest_setup/converter_box.jpg Graphic file (type j
 pg)
  <use ./images/MallinCam/astrofest_setup/converter_box.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/converter_box.jpg u
-sed on input line 540.
+sed on input line 542.
 (pdftex.def)             Requested size: 234.8775pt x 175.64871pt.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 536--542
+Overfull \hbox (23.99998pt too wide) in alignment at lines 538--544
  [] [] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 543--545
+Overfull \hbox (12.0pt too wide) in alignment at lines 545--547
  [] 
  []
 
@@ -1172,7 +1172,7 @@ File: ./images/MallinCam/astrofest_setup/mount_camera.jpg Graphic file (type jp
 g)
  <use ./images/MallinCam/astrofest_setup/mount_camera.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/mount_camera.jpg us
-ed on input line 550.
+ed on input line 552.
 (pdftex.def)             Requested size: 234.8775pt x 175.64871pt.
 
 <./images/MallinCam/astrofest_setup/svideo12.jpg, id=372, 1361.085pt x 1822.81p
@@ -1180,7 +1180,7 @@ t>
 File: ./images/MallinCam/astrofest_setup/svideo12.jpg Graphic file (type jpg)
  <use ./images/MallinCam/astrofest_setup/svideo12.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/svideo12.jpg used o
-n input line 556.
+n input line 558.
 (pdftex.def)             Requested size: 234.8775pt x 314.54633pt.
 
 <./images/MallinCam/astrofest_setup/HDMI_monitor.jpg, id=373, 1692.3225pt x 859
@@ -1189,22 +1189,22 @@ File: ./images/MallinCam/astrofest_setup/HDMI_monitor.jpg Graphic file (type jp
 g)
  <use ./images/MallinCam/astrofest_setup/HDMI_monitor.jpg>
 Package pdftex.def Info: ./images/MallinCam/astrofest_setup/HDMI_monitor.jpg us
-ed on input line 560.
+ed on input line 562.
 (pdftex.def)             Requested size: 234.8775pt x 119.23973pt.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 546--562
+Overfull \hbox (23.99998pt too wide) in alignment at lines 548--564
  [] [] 
  []
 
 [18 <./images/MallinCam/astrofest_setup/converter_box.jpg> <./images/MallinCam/
 astrofest_setup/mount_camera.jpg>]
-Overfull \hbox (12.0pt too wide) in alignment at lines 563--575
+Overfull \hbox (12.0pt too wide) in alignment at lines 565--577
  [] 
  []
 
 [19 <./images/MallinCam/astrofest_setup/svideo12.jpg> <./images/MallinCam/astro
 fest_setup/HDMI_monitor.jpg>]
-Overfull \hbox (12.0pt too wide) in alignment at lines 577--589
+Overfull \hbox (12.0pt too wide) in alignment at lines 579--591
  [] 
  []
 
@@ -1213,41 +1213,43 @@ File: ./images/MallinCam/dust/mercury_transit.jpg Graphic file (type jpg)
 
 <use ./images/MallinCam/dust/mercury_transit.jpg>
 Package pdftex.def Info: ./images/MallinCam/dust/mercury_transit.jpg used on in
-put line 598.
+put line 600.
 (pdftex.def)             Requested size: 446.26582pt x 334.70667pt.
- [20] [21 <./images/MallinCam/dust/mercury_transit.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
+ [20]
+<./images/dust/blower.jpg, id=396, 1561.835pt x 1247.66125pt>
+File: ./images/dust/blower.jpg Graphic file (type jpg)
 
- []
-
-<./images/mallincam/dew/dew_spectrum.png, id=404, 502.87875pt x 301.125pt>
+<use ./images/dust/blower.jpg>
+Package pdftex.def Info: ./images/dust/blower.jpg used on input line 627.
+(pdftex.def)             Requested size: 187.89914pt x 150.09364pt.
+ [21 <./images/MallinCam/dust/mercury_transit.jpg>] <./images/mallincam/dew/dew
+_spectrum.png, id=406, 502.87875pt x 301.125pt>
 File: ./images/mallincam/dew/dew_spectrum.png Graphic file (type png)
 
 <use ./images/mallincam/dew/dew_spectrum.png>
 Package pdftex.def Info: ./images/mallincam/dew/dew_spectrum.png used on input 
-line 641.
+line 652.
 (pdftex.def)             Requested size: 277.15373pt x 165.95926pt.
 
-<./images/mallincam/dew/frost.png, id=405, 341.275pt x 301.125pt>
+<./images/mallincam/dew/frost.png, id=407, 341.275pt x 301.125pt>
 File: ./images/mallincam/dew/frost.png Graphic file (type png)
 
 <use ./images/mallincam/dew/frost.png>
-Package pdftex.def Info: ./images/mallincam/dew/frost.png used on input line 64
-5.
+Package pdftex.def Info: ./images/mallincam/dew/frost.png used on input line 65
+6.
 (pdftex.def)             Requested size: 187.89914pt x 165.79385pt.
 
-Overfull \hbox (8.32657pt too wide) in paragraph at lines 648--651
+Overfull \hbox (8.32657pt too wide) in paragraph at lines 659--662
 [][] 
  []
 
-[22 <./images/mallincam/dew/dew_spectrum.png> <./images/mallincam/dew/frost.png
->]
+[22 <./images/dust/blower.jpg>]
 <./images/MallinCam/dew/silica_gel_can.jpg, id=424, 1581.91pt x 1524.69624pt>
 File: ./images/MallinCam/dew/silica_gel_can.jpg Graphic file (type jpg)
 
 <use ./images/MallinCam/dew/silica_gel_can.jpg>
 Package pdftex.def Info: ./images/MallinCam/dew/silica_gel_can.jpg used on inpu
-t line 677.
+t line 690.
 (pdftex.def)             Requested size: 117.43875pt x 113.18404pt.
 
 <./images/mallincam/dew/silica_sat.jpg, id=425, 2499.3375pt x 2531.4575pt>
@@ -1255,7 +1257,7 @@ File: ./images/mallincam/dew/silica_sat.jpg Graphic file (type jpg)
 
 <use ./images/mallincam/dew/silica_sat.jpg>
 Package pdftex.def Info: ./images/mallincam/dew/silica_sat.jpg used on input li
-ne 686.
+ne 699.
 (pdftex.def)             Requested size: 117.43875pt x 118.93216pt.
 
 <./images/mallincam/dew/silica_desat.jpg, id=426, 1592.95125pt x 1615.03375pt>
@@ -1263,137 +1265,146 @@ File: ./images/mallincam/dew/silica_desat.jpg Graphic file (type jpg)
 
 <use ./images/mallincam/dew/silica_desat.jpg>
 Package pdftex.def Info: ./images/mallincam/dew/silica_desat.jpg used on input 
-line 688.
+line 701.
 (pdftex.def)             Requested size: 117.43875pt x 119.05226pt.
 
-Overfull \hbox (0.76979pt too wide) in alignment at lines 681--689
+Overfull \hbox (0.76979pt too wide) in alignment at lines 694--702
  [] [] [] 
  []
 
-
-<./images/mallincam/dew/unscrewed_in_bag.jpg, id=427, 3945.74126pt x 2980.13374
+[23 <./images/mallincam/dew/dew_spectrum.png> <./images/mallincam/dew/frost.png
+> <./images/MallinCam/dew/silica_gel_can.jpg>]
+<./images/mallincam/dew/unscrewed_in_bag.jpg, id=441, 3945.74126pt x 2980.13374
 pt>
 File: ./images/mallincam/dew/unscrewed_in_bag.jpg Graphic file (type jpg)
  <use ./images/mallincam/dew/unscrewed_in_bag.jpg>
 Package pdftex.def Info: ./images/mallincam/dew/unscrewed_in_bag.jpg used on in
-put line 697.
+put line 710.
 (pdftex.def)             Requested size: 211.38832pt x 159.65613pt.
 
-<./images/mallincam/dew/screwed_in_bag.jpg, id=428, 3969.83125pt x 2998.20125pt
+<./images/mallincam/dew/screwed_in_bag.jpg, id=442, 3969.83125pt x 2998.20125pt
 >
 File: ./images/mallincam/dew/screwed_in_bag.jpg Graphic file (type jpg)
  <use ./images/mallincam/dew/screwed_in_bag.jpg>
 Package pdftex.def Info: ./images/mallincam/dew/screwed_in_bag.jpg used on inpu
-t line 701.
+t line 714.
 (pdftex.def)             Requested size: 211.38832pt x 159.61758pt.
 
-<./images/mallincam/dew/mfr5_assembled.jpg, id=429, 3199.955pt x 1343.0175pt>
+<./images/mallincam/dew/mfr5_assembled.jpg, id=443, 3199.955pt x 1343.0175pt>
 File: ./images/mallincam/dew/mfr5_assembled.jpg Graphic file (type jpg)
 
 <use ./images/mallincam/dew/mfr5_assembled.jpg>
 Package pdftex.def Info: ./images/mallincam/dew/mfr5_assembled.jpg used on inpu
-t line 706.
+t line 719.
 (pdftex.def)             Requested size: 211.38832pt x 88.7132pt.
 
-Overfull \hbox (0.5108pt too wide) in alignment at lines 690--707
+Overfull \hbox (0.5108pt too wide) in alignment at lines 703--720
  [] [] 
  []
 
-[23 <./images/MallinCam/dew/silica_gel_can.jpg> <./images/mallincam/dew/silica_
-sat.jpg> <./images/mallincam/dew/silica_desat.jpg>] [24 <./images/mallincam/dew
-/unscrewed_in_bag.jpg> <./images/mallincam/dew/screwed_in_bag.jpg> <./images/ma
-llincam/dew/mfr5_assembled.jpg>] [25] [26]
-
-LaTeX Warning: Citation `hopkins_spec' on page 27 undefined on input line 763.
-
-
-<./images/rbw_optics/spectroscope_wspacer.jpeg, id=460, 4368.32pt x 2500.34125p
+[24 <./images/mallincam/dew/silica_sat.jpg> <./images/mallincam/dew/silica_desa
+t.jpg> <./images/mallincam/dew/unscrewed_in_bag.jpg> <./images/mallincam/dew/sc
+rewed_in_bag.jpg> <./images/mallincam/dew/mfr5_assembled.jpg>] [25] [26]
+<./images/rbw_optics/spectroscope_wspacer.jpeg, id=464, 4368.32pt x 2500.34125p
 t>
 File: ./images/rbw_optics/spectroscope_wspacer.jpeg Graphic file (type jpg)
  <use ./images/rbw_optics/spectroscope_wspacer.jpeg>
 Package pdftex.def Info: ./images/rbw_optics/spectroscope_wspacer.jpeg used on 
-input line 781.
+input line 796.
 (pdftex.def)             Requested size: 375.80544pt x 215.10146pt.
+ [27
 
-<./images/rbw_optics/vega_spec_labeled.png, id=461, 444.66125pt x 370.38374pt>
+ <./images/rbw_optics/spectroscope_wspacer.jpeg>]
+<./images/rbw_optics/zero_and_first_order.png, id=472, 1198.4775pt x 171.64125p
+t>
+File: ./images/rbw_optics/zero_and_first_order.png Graphic file (type png)
+ <use ./images/rbw_optics/zero_and_first_order.png>
+Package pdftex.def Info: ./images/rbw_optics/zero_and_first_order.png used on i
+nput line 816.
+(pdftex.def)             Requested size: 375.80544pt x 53.82108pt.
+ [28 <./images/rbw_optics/zero_and_first_order.png>]
+<./images/rbw_optics/vega_spec_labeled.png, id=489, 444.66125pt x 370.38374pt>
 File: ./images/rbw_optics/vega_spec_labeled.png Graphic file (type png)
 
 <use ./images/rbw_optics/vega_spec_labeled.png>
 Package pdftex.def Info: ./images/rbw_optics/vega_spec_labeled.png used on inpu
-t line 795.
-(pdftex.def)             Requested size: 375.80544pt x 313.03046pt.
- [27
+t line 855.
+(pdftex.def)             Requested size: 281.85587pt x 234.77284pt.
 
- <./images/rbw_optics/spectroscope_wspacer.jpeg>]
-<./images/rbw_optics/vega_spec_thin.png, id=467, 722.7pt x 488.82625pt>
+Overfull \hbox (12.0pt too wide) in alignment at lines 865--875
+ [] 
+ []
+
+[29 <./images/rbw_optics/vega_spec_labeled.png>]
+<./images/rbw_optics/vega_spec_thin.png, id=503, 695.59875pt x 472.76625pt>
 File: ./images/rbw_optics/vega_spec_thin.png Graphic file (type png)
 
 <use ./images/rbw_optics/vega_spec_thin.png>
 Package pdftex.def Info: ./images/rbw_optics/vega_spec_thin.png used on input l
-ine 805.
-(pdftex.def)             Requested size: 234.8775pt x 158.86664pt.
+ine 883.
+(pdftex.def)             Requested size: 234.8775pt x 159.63467pt.
 
-<./images/rbw_optics/vega_spec_spread.png, id=468, 722.7pt x 488.82625pt>
+<./images/rbw_optics/vega_spec_spread.png, id=504, 717.68124pt x 484.81125pt>
 File: ./images/rbw_optics/vega_spec_spread.png Graphic file (type png)
 
 <use ./images/rbw_optics/vega_spec_spread.png>
 Package pdftex.def Info: ./images/rbw_optics/vega_spec_spread.png used on input
- line 808.
-(pdftex.def)             Requested size: 234.8775pt x 158.86664pt.
+ line 888.
+(pdftex.def)             Requested size: 234.8775pt x 158.66403pt.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 802--809
+Overfull \hbox (23.99998pt too wide) in alignment at lines 875--889
  [] [] 
  []
 
-[28 <./images/rbw_optics/vega_spec_labeled.png> <./images/rbw_optics/vega_spec_
-thin.png>] [29 <./images/rbw_optics/vega_spec_spread.png>]
-<./images/dome/shutter_ctrl_panel.png, id=482, 382.42876pt x 703.62875pt>
+[30 <./images/rbw_optics/vega_spec_thin.png> <./images/rbw_optics/vega_spec_spr
+ead.png>]
+<./images/dome/shutter_ctrl_panel.png, id=513, 382.42876pt x 703.62875pt>
 File: ./images/dome/shutter_ctrl_panel.png Graphic file (type png)
 
 <use ./images/dome/shutter_ctrl_panel.png>
 Package pdftex.def Info: ./images/dome/shutter_ctrl_panel.png used on input lin
-e 849.
+e 930.
 (pdftex.def)             Requested size: 150.31987pt x 276.57214pt.
 
-<./images/dome/azimuth_ctrl_panel.png, id=483, 382.42876pt x 703.62875pt>
+<./images/dome/azimuth_ctrl_panel.png, id=514, 382.42876pt x 703.62875pt>
 File: ./images/dome/azimuth_ctrl_panel.png Graphic file (type png)
 
 <use ./images/dome/azimuth_ctrl_panel.png>
 Package pdftex.def Info: ./images/dome/azimuth_ctrl_panel.png used on input lin
-e 854.
+e 935.
 (pdftex.def)             Requested size: 150.31987pt x 276.57214pt.
- [30
+ [31
 
 ]
-<./images/dome/dome_remote.jpg, id=488, 1320.935pt x 2832.5825pt>
+<./images/dome/dome_remote.jpg, id=519, 1320.935pt x 2832.5825pt>
 File: ./images/dome/dome_remote.jpg Graphic file (type jpg)
 
 <use ./images/dome/dome_remote.jpg>
-Package pdftex.def Info: ./images/dome/dome_remote.jpg used on input line 875.
+Package pdftex.def Info: ./images/dome/dome_remote.jpg used on input line 956.
 (pdftex.def)             Requested size: 117.43875pt x 251.80946pt.
- [31 <./images/dome/shutter_ctrl_panel.png> <./images/dome/azimuth_ctrl_panel.p
+ [32 <./images/dome/shutter_ctrl_panel.png> <./images/dome/azimuth_ctrl_panel.p
 ng>]
-<./images/dome/azimuth_skirt_crop.png, id=502, 520.8258pt x 145.7445pt>
+<./images/dome/azimuth_skirt_crop.png, id=533, 520.8258pt x 145.7445pt>
 File: ./images/dome/azimuth_skirt_crop.png Graphic file (type png)
 
 <use ./images/dome/azimuth_skirt_crop.png>
 Package pdftex.def Info: ./images/dome/azimuth_skirt_crop.png used on input lin
-e 903.
+e 984.
 (pdftex.def)             Requested size: 375.80544pt x 105.16501pt.
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 897--904
+Overfull \hbox (12.0pt too wide) in alignment at lines 978--985
  [] 
  []
 
-[32 <./images/dome/dome_remote.jpg>]
-<./images/dome/roller_crop.png, id=515, 257.5221pt x 145.2627pt>
+[33 <./images/dome/dome_remote.jpg>]
+<./images/dome/roller_crop.png, id=547, 257.5221pt x 145.2627pt>
 File: ./images/dome/roller_crop.png Graphic file (type png)
 
 <use ./images/dome/roller_crop.png>
-Package pdftex.def Info: ./images/dome/roller_crop.png used on input line 911.
+Package pdftex.def Info: ./images/dome/roller_crop.png used on input line 992.
 (pdftex.def)             Requested size: 187.89914pt x 105.99211pt.
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 914--918
+Overfull \hbox (12.0pt too wide) in alignment at lines 995--999
  [] [] 
  []
 
@@ -1403,109 +1414,114 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-<./images/dome/azimuth_motor_wide.png, id=516, 1284.8pt x 803.0pt>
+<./images/dome/azimuth_motor_wide.png, id=548, 1284.8pt x 803.0pt>
 File: ./images/dome/azimuth_motor_wide.png Graphic file (type png)
 
 <use ./images/dome/azimuth_motor_wide.png>
 Package pdftex.def Info: ./images/dome/azimuth_motor_wide.png used on input lin
-e 930.
+e 1011.
 (pdftex.def)             Requested size: 375.80544pt x 234.87349pt.
- [33 <./images/dome/azimuth_skirt_crop.png> <./images/dome/roller_crop.png>]
-Overfull \hbox (12.0pt too wide) in alignment at lines 940--942
+ [34 <./images/dome/azimuth_skirt_crop.png> <./images/dome/roller_crop.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1019
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in alignment at lines 1023--1025
  [] 
  []
 
-<./images/dome/spring_arm.png, id=526, 496.85625pt x 751.80875pt>
+<./images/dome/spring_arm.png, id=558, 496.85625pt x 751.80875pt>
 File: ./images/dome/spring_arm.png Graphic file (type png)
 
 <use ./images/dome/spring_arm.png>
-Package pdftex.def Info: ./images/dome/spring_arm.png used on input line 952.
+Package pdftex.def Info: ./images/dome/spring_arm.png used on input line 1035.
 (pdftex.def)             Requested size: 93.94957pt x 142.15685pt.
 
-Overfull \hbox (0.5108pt too wide) in alignment at lines 944--953
+Overfull \hbox (0.5108pt too wide) in alignment at lines 1027--1036
  [] [] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in alignment at lines 955--959
+Overfull \hbox (12.0pt too wide) in alignment at lines 1038--1042
  [] 
  []
 
-<./images/dome/upper_shutter_gearbox.jpg, id=527, 3035.34pt x 4047.12pt>
+<./images/dome/upper_shutter_gearbox.jpg, id=559, 3035.34pt x 4047.12pt>
 File: ./images/dome/upper_shutter_gearbox.jpg Graphic file (type jpg)
 
 <use ./images/dome/upper_shutter_gearbox.jpg>
 Package pdftex.def Info: ./images/dome/upper_shutter_gearbox.jpg used on input 
-line 964.
+line 1047.
 (pdftex.def)             Requested size: 93.94957pt x 125.2371pt.
 
-Overfull \hbox (0.5108pt too wide) in alignment at lines 960--965
+Overfull \hbox (0.5108pt too wide) in alignment at lines 1043--1048
  [] [] 
  []
 
-[34 <./images/dome/azimuth_motor_wide.png> <./images/dome/spring_arm.png>]
-Overfull \hbox (12.0pt too wide) in alignment at lines 966--969
+[35 <./images/dome/azimuth_motor_wide.png> <./images/dome/spring_arm.png>]
+Overfull \hbox (12.0pt too wide) in alignment at lines 1049--1052
  [] 
  []
 
-<./images/dome/outlet.png, id=540, 3003.22pt x 4015.0pt>
+<./images/dome/outlet.png, id=573, 3003.22pt x 4015.0pt>
 File: ./images/dome/outlet.png Graphic file (type png)
 
 <use ./images/dome/outlet.png>
-Package pdftex.def Info: ./images/dome/outlet.png used on input line 980.
+Package pdftex.def Info: ./images/dome/outlet.png used on input line 1065.
 (pdftex.def)             Requested size: 234.8775pt x 313.97743pt.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 973--981
+Overfull \hbox (23.99998pt too wide) in alignment at lines 1057--1066
  [] [] 
  []
 
-[35 <./images/dome/upper_shutter_gearbox.jpg> <./images/dome/outlet.png>]
-[36
-
-] [37
+[36 <./images/dome/upper_shutter_gearbox.jpg> <./images/dome/outlet.png>]
+[37
 
 ] [38
 
+] [39
+
 ]
-<./images/mallincam/focal_reduction/MFR5_labeled.jpg, id=563, 4047.12pt x 1393.
+<./images/mallincam/focal_reduction/MFR5_labeled.jpg, id=594, 4047.12pt x 1393.
 205pt>
 File: ./images/mallincam/focal_reduction/MFR5_labeled.jpg Graphic file (type jp
 g)
  <use ./images/mallincam/focal_reduction/MFR5_labeled.jpg>
 Package pdftex.def Info: ./images/mallincam/focal_reduction/MFR5_labeled.jpg us
-ed on input line 1024.
+ed on input line 1109.
 (pdftex.def)             Requested size: 375.80544pt x 129.35838pt.
 
-<./images/mallincam/focal_reduction/B_adapter.jpg, id=564, 4047.12pt x 1913.147
+<./images/mallincam/focal_reduction/B_adapter.jpg, id=595, 4047.12pt x 1913.147
 5pt>
 File: ./images/mallincam/focal_reduction/B_adapter.jpg Graphic file (type jpg)
  <use ./images/mallincam/focal_reduction/B_adapter.jpg>
 Package pdftex.def Info: ./images/mallincam/focal_reduction/B_adapter.jpg used 
-on input line 1038.
+on input line 1123.
 (pdftex.def)             Requested size: 281.85587pt x 133.23338pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1091.
+(caption)                particular \caption on input line 1177.
 See the caption package documentation for explanation.
 
-[39
+[40
 
  <./images/mallincam/focal_reduction/MFR5_labeled.jpg> <./images/mallincam/foca
 l_reduction/B_adapter.jpg>]pdfTeX warning (ext4): destination with the same ide
 ntifier (name{table.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1091 ...ectively, especially on smaller scopes.}
-                                                   [40]
-<./images/dome/lower_shutter_schematic.png, id=577, 614.295pt x 756.426pt>
+l.1177 				2013 \cite{thompson13}.}
+                                    [41]
+<./images/dome/lower_shutter_schematic.png, id=610, 614.295pt x 756.426pt>
 File: ./images/dome/lower_shutter_schematic.png Graphic file (type png)
 
 <use ./images/dome/lower_shutter_schematic.png>
 Package pdftex.def Info: ./images/dome/lower_shutter_schematic.png used on inpu
-t line 1102.
+t line 1188.
 (pdftex.def)             Requested size: 399.288pt x 491.67107pt.
- [41
+ [42
 
  <./images/dome/lower_shutter_schematic.png>] (./Care_and_Feeding_Mt_SB.bbl
 Missing character: There is no â in font cmti12!
@@ -1517,52 +1533,52 @@ Underfull \hbox (badness 3735) in paragraph at lines 30--35
 Users Guide\OT1/cmr/m/n/12 .  Chico, CA. Ver-
  []
 
-) [42
+) [43
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1122.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1122.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1208.
  (./Care_and_Feeding_Mt_SB.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1122.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1122.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1208.
 
 Package rerunfilecheck Info: File `Care_and_Feeding_Mt_SB.out' has not changed.
 
 (rerunfilecheck)             Checksum: C643D0B71513D05C45C13E998F084497;1534.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1122.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1208.
  ) 
 Here is how much of TeX's memory you used:
- 19675 strings out of 493315
- 340525 string characters out of 6137904
- 439639 words of memory out of 5000000
- 22449 multiletter control sequences out of 15000+600000
+ 19705 strings out of 493315
+ 341062 string characters out of 6137904
+ 439922 words of memory out of 5000000
+ 22460 multiletter control sequences out of 15000+600000
  15481 words of font info for 59 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,15n,60p,945b,865s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Care_and_Feeding_Mt_SB.pdf (44 pages, 83264898 bytes).
+ 56i,15n,60p,945b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
+st, replaced by a fixed one
+
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Care_and_Feeding_Mt_SB.pdf (45 pages, 83910988 bytes).
 PDF statistics:
- 697 PDF objects out of 1000 (max. 8388607)
- 575 compressed objects within 6 object streams
- 239 named destinations out of 1000 (max. 500000)
- 409 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 733 PDF objects out of 1000 (max. 8388607)
+ 603 compressed objects within 7 object streams
+ 255 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
